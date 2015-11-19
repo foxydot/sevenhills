@@ -124,7 +124,7 @@ function msdlab_blue_settings_body_class($classes) {
     return $classes;
 }
 
-add_action('wp_head','msdlab_blue_logo');
+//add_action('wp_head','msdlab_blue_logo');
 function msdlab_blue_logo(){
     if(!is_admin()){
         $logo = wp_get_attachment_image_src( esc_attr( genesis_get_option('logo') ), 'full' );

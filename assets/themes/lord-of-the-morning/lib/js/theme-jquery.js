@@ -31,5 +31,5 @@ jQuery(document).ready(function($) {
 	        $(this).html('LESS <i class="fa fa-angle-up"></i>');
 	    }
 	});
-	
+	$('.entry-title').lettering('words');
 });

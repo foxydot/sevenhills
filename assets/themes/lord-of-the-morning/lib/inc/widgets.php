@@ -12,9 +12,8 @@ class KohlerConnected extends MSDConnected {
         echo $before_widget;
         if ( !empty( $title ) ) { print $before_title.$title.$after_title; } 
         if ( !empty( $text )){ print '<div class="connected-text">'.$text.'</div>'; }
-        print '<div class="wrap">';
         if(($address||$phone||$tollfree||$fax||$email||$social)&&$form_id > 0){
-            print '<div class="col-md-7">';
+            print '<div class="col-md-9">';
         }
         if ( $form_id > 0 ){
             print '<div class="connected-form">';
@@ -26,10 +25,15 @@ class KohlerConnected extends MSDConnected {
             print '</div>';
         }
         if(($address||$phone||$tollfree||$fax||$email||$social)&&$form_id > 0){
-            print '<div class="col-md-5 align-right">';
+            print '<div class="col-md-3 right">';
         }
+        
+        
+        if ( $social ){
+            $social = do_shortcode('[msd-social]');
+            if( $social ){ print '<div class="connected-social">'.$social.'</div>'; }
+        }   
         if ( $address ){
-            print '<h3>Address</h3>';
             $bizname = do_shortcode('[msd-bizname]'); 
             if ( $bizname ){
                 print '<div class="connected-bizname">'.$bizname.'</div>';
@@ -83,19 +87,37 @@ class KohlerConnected extends MSDConnected {
             $email = (get_option('msdsocial_email')!='')?'Email: <span itemprop="email"><a href="mailto:'.antispambot(get_option('msdsocial_email')).'">'.antispambot(get_option('msdsocial_email')).'</a></span> ':'';
             if ( $email ){ print '<div class="connected-email">'.$email.'</div>'; }
         }
-        if ( $social ){
-            $social = do_shortcode('[msd-social]');
-            if( $social ){ print '<div class="connected-social">'.$social.'</div>'; }
-        }   
         
         if(($address||$phone||$tollfree||$fax||$email||$social)&&$form_id > 0){
             print '</div>';
         }
-        print '</div>';
         
         echo $after_widget;
     }
 }
 
 add_action('widgets_init', create_function('', 'return register_widget("KohlerConnected");'));
+}
+
+
+/**
+ * Visit Class
+ */
+if(class_exists('MSDVisit')){
+class KohlerVisit extends MSDVisit {
+    function widget( $args, $instance ) {
+        extract($args);
+        global $msd_social;
+        $title = apply_filters( 'widget_title', empty($instance['title']) ? '' : $instance['title'], $instance );
+        $text = apply_filters( 'widget_text', empty( $instance['text'] ) ? '' : $instance['text'], $instance );
+        echo $before_widget;
+        print '<a href="/" class="logo footer-logo"></a>';
+        if ( !empty( $title ) ) { print $before_title.$title.$after_title; } 
+        echo '<div class="business-hours">'.$msd_social->get_hours_deux().'</div>';
+        if ( !empty( $text )){ print '<div class="business-hours-text">'.$text.'</div>'; }
+        echo $after_widget;
+    } 
+}
+
+add_action('widgets_init', create_function('', 'return register_widget("KohlerVisit");'));
 }
