@@ -5,18 +5,17 @@ Structure and Layout
 /* Site Containers
 --------------------------------------------- */
 
-.wrap,
-.sidebar-primary section,
-.sidebar-secondary section,
-article {
+.site-inner,
+.wrap {
   margin: 0 auto;
-  max-width: 1000px;
-  }
+  max-width: 1140px;
+}
 
 .site-inner {
-  clear: both;
+  padding: 0;
   padding-top: 20px;
   padding-top: 2rem;
+  border-top: 1px solid fade(@ltbrown,50%);
 }
 
 /* Column Widths and Positions
@@ -27,7 +26,7 @@ article {
 .content-sidebar-sidebar .content-sidebar-wrap,
 .sidebar-content-sidebar .content-sidebar-wrap,
 .sidebar-sidebar-content .content-sidebar-wrap {
-  padding: 0;
+  width: 920px;
 }
 
 .content-sidebar-sidebar .content-sidebar-wrap {
@@ -36,13 +35,14 @@ article {
 
 .sidebar-content-sidebar .content-sidebar-wrap,
 .sidebar-sidebar-content .content-sidebar-wrap {
-  float: left;
+  float: right;
 }
 
 /* Content */
 
 .content {
   float: right;
+  width: 740px;
 }
 
 .content-sidebar .content,
@@ -54,7 +54,7 @@ article {
 .content-sidebar-sidebar .content,
 .sidebar-content-sidebar .content,
 .sidebar-sidebar-content .content {
-  /*width: 520px;*/
+  width: 520px;
 }
 
 .full-width-content .content {
@@ -64,10 +64,8 @@ article {
 /* Primary Sidebar */
 
 .sidebar-primary {
-  float: left;
-}
-.sidebar-content-sidebar .sidebar-primary {
-  padding-left: 0;
+  float: right;
+  width: 360px;
 }
 
 .sidebar-content .sidebar-primary,
@@ -78,7 +76,8 @@ article {
 /* Secondary Sidebar */
 
 .sidebar-secondary {
-  float: right;
+  float: left;
+  width: 180px;
 }
 
 .content-sidebar-sidebar .sidebar-secondary {

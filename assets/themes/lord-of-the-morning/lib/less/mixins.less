@@ -1,31 +1,26 @@
 @import 'lesshat';
 /* Import Fonts
 ------------------------------------------------------------ */
-@import url(https://fonts.googleapis.com/css?family=Raleway:100,200,700,900,400,500);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
 
 /* Font Stacks */
 .customserif(@size:1.6) {
   font-family: Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: unit((@size*10),px);
   font-size: unit(@size,rem);
   line-height: 1.625;
 }
 .custombody(@size:1.6) {
-  font-family: "Raleway","Helvetica Neue", "Trebuchet MS", Calibri, sans-serif;
-  font-weight: 400;
+  font-family: "Lato","Helvetica Neue", "Trebuchet MS", Calibri, sans-serif;
+  font-weight: 300;
   font-size: unit((@size*10),px);
   font-size: unit(@size,rem);
   line-height: 1.625;
 }
-
-.custombodythin(@size:1.6){
-  .custombody(@size);
-  font-family: "Helvetica Neue Thin", "Trebuchet MS", Calibri, sans-serif;
-}
 .customheader(@size:1.6) {
-  font-family: "Raleway","Trebuchet MS", Calibri, sans-serif;
-  font-weight: 400;
+  font-family: "Lato","Trebuchet MS", Calibri, sans-serif;
+  font-weight: 300;
   font-size: unit((@size*10),px);
   font-size: unit(@size,rem);
   line-height: 1.625;
@@ -41,13 +36,13 @@
 
 /* Colors */
 @red: #f00;
-@orange: #F16528;
+@orange: #FC7136;
 @yellow: #ff0;
-@green: #9CA728;
-@blue: #0F6BAE;
+@green: #0f0;
+@blue: #00f;
 @purple: #90f;
-@beige: #886651;
-@brown: #630;
+@beige: #c96;
+@brown: #31251C;
 
 @ltred: lighten(@red,20%);
 @dkred: darken(@red, 20%);
@@ -61,21 +56,18 @@
 @dkblue: darken(@blue, 20%);
 @ltpurple: lighten(@purple,20%);
 @dkpurple: darken(@purple, 20%);
-@ltbeige: lighten(@beige,40%);
+@ltbeige: lighten(@beige,20%);
 @dkbeige: darken(@beige, 20%);
-@ltbrown: lighten(@brown,20%);
+@ltbrown: #9B7255;
 @dkbrown: darken(@brown, 20%);
 
 /* Neutrals */
 @white: #FFF;
-@offwhite: #F2F7FA;
-@vltgrey: #B7B7B7;
-@ltgrey: #959595;
-@mdgrey: #7F7F7F;
-@medgrey: @mdgrey;
-@dkgrey: #353535;
+@offwhite: #F6F6F6;
+@ltgrey: #CCC;
+@medgrey: #999;
+@dkgrey: #666;
 @black: #000;
-
 //mixins for social colors
 @facebook: #345AA1;
 @twitter: #348DB9;
@@ -92,6 +84,36 @@
 @sharethis: #00BF00;
 @contact: #999999;
 @rss: #F37D2A;
+
+
+/* Buttons */
+.button(@background:@orange,@color:@white) {
+  padding: 6px 24px;
+  .customsanserif;
+  color: @color;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: table;
+  margin: 12px auto;
+  text-decoration: none;
+  background-color: @background;
+  border: 0;
+}
+
+.button{
+  .button();
+}
+
+.button-hover(@background:@orange,@color:@white) {
+  .button(@background,@color);
+  background-color: fade(@background,80%);
+}
+
+.button:hover,
+.button a:hover, {
+  .button-hover();
+}
 
 /* Arrows */
 .arrow-down(@color:@white){
@@ -224,10 +246,18 @@
   background-color: fade(@color,20%);
 }
 
-.button:hover,
-.button a:hover, {
-  .button-hover();
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.button,
+.entry-content .button {
+  .button();
+  &:hover{
+    .button-hover();
+  }
 }
+
 
 /* Clears */
 .msd-clearfix {

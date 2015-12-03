@@ -3,14 +3,10 @@ Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
 
 .footer-widgets {
-  background-color: @ltbeige;
-  background-image: url(../img/footer.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  color: @white;
   clear: both;
+  background: @ltbrown url(../img/bkg-ftr.png) center center;
   padding: 2rem 0 57px 0;
+  color: @white;
   a {
     color: @white;
   }
@@ -18,59 +14,26 @@ Footer Widgets
   a:hover {
     color: fade(@white,50%);
   }
+  input[type="submit"],input[type="button"],.button{
+    .button(@orange,@white);
+    margin: 12px 0;
+    &:hover{
+      .button-hover(@orange,@white);
+      margin: 12px 0;
+    }
+  }
   .widget-area{
     .wrap;
   }
   .widget {
     margin: 0 auto;
-  }
-  
-  .widget.msd-visit{
-    .make-md-column(3);
-    padding-left: 0;
-    .logo{
-      background: url(../img/logo2x.png) no-repeat left center;
-      background-size: contain;
-      display: block;
-      width: 100%;
-      height: 200px;
-      margin-bottom: 2rem;
-    }
     .widget-title{
-      color: white;
-      border-bottom: 1px solid @white;
-      font-size: 1.8rem;
-      font-weight: 700;
-      width: 60%;
-    }
-    .hours{
-      width: 60%;
-      border-bottom: 1px solid @white;
-      margin: 1rem 0;
-      padding: 1rem 0;
-      .day{
-        display: block;
-        font-weight: 100;
-        font-size: 2.4rem;
-        line-height: 1.2;
-      }
-      .hours{
-        display: block;
-        width: 100%;
-        border-bottom: 0px solid @white;
-        margin: 0;
-        padding: 0;
-      }
+      text-transform: none;
+      font-size: 2rem;
+      color: @white;
     }
   }
-  .widget.msd-connected{
-    .make-md-column(9);
-    padding-right: 0;  
-    .widget-title {
-    }
-  }
-
-  
+    
   li {
     list-style-type: none;
     margin-bottom: 6px;
@@ -79,24 +42,44 @@ Footer Widgets
   }
   
   .connected-text{
-    text-align: center;
-    max-width: 75%;
-    margin: 0 auto;
   }
-  .connected-form{
+  .gform_wrapper{
     .gform_title{
       
-      font-size: 2.8rem;
-      font-weight: 700;
-      margin: 6rem auto;
-      text-align: center;
+      font-size: 1.6rem;
     }
-    input, textarea{
-      background-color: transparent;
+    input[type="text"],
+input[type="password"],
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="range"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+select,
+textarea{
       border: 0;
-      border-bottom: 1px solid @white;
-      padding: 1rem !important;
+      background: fade(@white,20%);
+      padding: 0.5em;
     }
+    input[type="button"],
+input[type="reset"],
+input[type="submit"]{
+  color: @white;
+  background: fade(@white,0%);
+  border: 2px solid fade(@white,20%);
+  &:hover{
+  background: fade(@white,20%);
+  border: 2px solid fade(@white,40%);
+  }
+}
     label.gfield_label{
       display: none;
     }
@@ -119,12 +102,11 @@ Footer Widgets
        color: @white;  
    font-style: italic;
     }
-    input[type="submit"],input[type="button"],a.button{
-      .button();
-      &:hover{
-        background-color: fade(@white,20%);
-      }
-    }
+    
+  .gform_footer{
+    margin: 0;
+    padding: 0;
+  }
   }
   .right{
     font-size: 14px;
@@ -135,10 +117,6 @@ Footer Widgets
     }
   }
   h3, h3.gform_title{
-    font-size: 2.0rem;
-    text-transform: uppercase;
-    font-weight: 300 !important;
-    margin: 10px 0 6px;
   }
   .connected-address{
     margin-bottom: 2rem;
@@ -155,14 +133,16 @@ Footer Widgets
       float: left;
       display: block;
       a.fa{
-        background: @white;
-        border-radius: 100%;
-        margin: 10px;
+        background:transparent;
+        margin: 5px;
         height: 40px;
         width: 40px;
-        font-size: 2.4rem;
+        font-size: 2.8rem;
         line-height: 1.6;
-        color: @medgrey;
+        color: fade(@white,30%);
+        &:before{
+          opacity: 1;
+        }
       }
       a.fa.first-child{
         margin-left: 0;
@@ -175,49 +155,49 @@ Footer Widgets
       }
           
        a.fa-facebook:hover{
-         background-color:@facebook;
+         color:@facebook;
        }
        a.fa-twitter:hover{
-         background-color:@twitter;
+         color:@twitter;
        }
        a.fa-pinterest:hover{
-         background-color:@pinterest;
+         color:@pinterest;
        }
        a.fa-google-plus:hover{
-         background-color:@google;
+         color:@google;
        }
        a.fa-linkedin:hover{
-         background-color:@linkedin;
+         color:@linkedin;
        }
        a.fa-instagram:hover{
-         background-color:@instagram;
+         color:@instagram;
        }
        a.fa-tumblr:hover{
-         background-color:@tumblr;
+         color:@tumblr;
        }
        a.fa-reddit:hover{
-         background-color:@reddit;
+         color:@reddit;
        }
        a.fa-flickr:hover{
-         background-color:@flickr;
+         color:@flickr;
        }
        a.fa-youtube:hover{
-         background-color:@youtube;
+         color:@youtube;
        }
        a.fa-vimeo-square:hover{
-         background-color:@vimeo;
+         color:@vimeo;
        }
        a.fa-vine:hover{
-         background-color:@vine;
+         color:@vine;
        }
        a.fa-share-alt:hover{
-         background-color:@sharethis;
+         color:@sharethis;
        }
        a.fa-envelope:hover{
-         background-color:@contact;
+         color:@contact;
        }
        a.fa-rss:hover{
-         background-color:@rss;
+         color:@rss;
        }
     }
   }

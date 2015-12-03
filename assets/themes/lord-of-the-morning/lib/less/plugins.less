@@ -10,7 +10,7 @@ Plugins
 }
 
 .enews-widget .widget-title {
-  color: @white;
+  color: #fff;
 }
 
 .enews-widget input {
@@ -24,14 +24,14 @@ Plugins
 
 .enews-widget input[type="submit"] {
   background-color: #f15123;
-  color: @white;
+  color: #fff;
   margin: 0;
   width: 100%;
 }
 
 .enews-widget input:hover[type="submit"] {
-  background-color: @white;
-  color: @dkgrey;
+  background-color: #fff;
+  color: #333;
 }
 
 /* Genesis Latest Tweets
@@ -42,50 +42,6 @@ Plugins
   margin-bottom: 1.6rem;
 }
 
-/* Gravity Forms
---------------------------------------------- */
-
-div.gform_wrapper input[type="email"],
-div.gform_wrapper input[type="text"],
-div.gform_wrapper textarea,
-div.gform_wrapper .ginput_complex label {
-  padding: 2px;
-  padding: 0.2rem;
-}
-
-div.gform_wrapper .ginput_complex label {
-  padding: 0;
-}
-
-div.gform_wrapper li,
-div.gform_wrapper form li {
-}
-
-div.gform_wrapper .gform_body .gfield{
-  padding: 0.5em;
-  &.even{}
-  &.odd{}
-  .ginput_container{
-    .gfield_radio{
-      li{
-        display: inline-block;
-        min-width: 16%;
-        input,label{
-          text-align: center;
-          display: block;
-          margin: 1px auto;
-          float: none;
-          font-weight: 400;
-        }
-      }
-    }
-  }
-}
-
-div.gform_wrapper .gform_footer input[type="submit"] {
-  font-size: 14px;
-  font-size: 1.4rem;
-}
 
 /* Jetpack
 --------------------------------------------- */
@@ -94,20 +50,91 @@ img#wpstats {
   display: none;
 }
 
-.gfield{
-  table.gsurvey-likert{
-    border: 0;
-    tbody{
-      border:0;
-      tr{
-        border: 0;
-        td{
-          border: 0;
-          &.gsurvey-likert-choice-label{
-            background: none;
-          }
-        }
+/*LayerSlider*/
+.testimonial-slider-title{
+  margin: 0 auto;
+  color: @ltbrown;
+  font-weight: 900;
+  font-size: 28px;
+}
+.testimonial-slider-quote{
+  left: 10% !important;
+  margin: 0 auto !important;
+  font-style: italic;
+}
+.testimonial-slider-attribution{
+  margin: 0 auto;
+  font-style: italic;
+  font-weight: 700;
+  color: @orange;
+}
+
+/* MSD Social */
+
+.pre-header{
+  .clearfix;
+  .connected-social{
+    .social-media{
+      float: right;
+      a.fa{
+        background: none;
+        color: @ltgrey;
+        height: auto;
+        line-height: inherit;
       }
+      a.fa:hover{
+        line-height:inherit;
+        height: auto;
+      }
+      a.fa.last-child{
+        margin-right: 0;
+      }
+          
+       a.fa-facebook:hover{
+         color:@facebook;
+       }
+       a.fa-twitter:hover{
+         color:@twitter;
+       }
+       a.fa-pinterest:hover{
+         color:@pinterest;
+       }
+       a.fa-google-plus:hover{
+         color:@google;
+       }
+       a.fa-linkedin:hover{
+         color:@linkedin;
+       }
+       a.fa-instagram:hover{
+         color:@instagram;
+       }
+       a.fa-tumblr:hover{
+         color:@tumblr;
+       }
+       a.fa-reddit:hover{
+         color:@reddit;
+       }
+       a.fa-flickr:hover{
+         color:@flickr;
+       }
+       a.fa-youtube:hover{
+         color:@youtube;
+       }
+       a.fa-vimeo-square:hover{
+         color:@vimeo;
+       }
+       a.fa-vine:hover{
+         color:@vine;
+       }
+       a.fa-share-alt:hover{
+         color:@sharethis;
+       }
+       a.fa-envelope:hover{
+         color:@contact;
+       }
+       a.fa-rss:hover{
+         color:@rss;
+       }
     }
   }
 }

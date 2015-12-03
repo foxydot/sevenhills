@@ -1,55 +1,51 @@
 /*
 Widgets
 ---------------------------------------------------------------------------------------------------- */
-.widget{
-  ul{
-    li{
-      list-style: none inside none;
-    }
-  }
-  .widget-title{
-    background: none;
-    padding: 0.4rem 0;
-    font-weight: normal;
-    margin-bottom: 0;
-    color: @blue;
-  }
-}
 
 /* Featured Content
 --------------------------------------------- */
-.featured-content{
-  .entry {
-    border-bottom: 2px solid #f5f5f5;
-    margin-bottom: 20px;
-    margin-bottom: 2rem;
-    padding: 0 10px 24px;
-    padding: 0 1rem 2.4rem;
-    .entry-header{
-      .entry-title {
-        border: none;
-        font-size: 14px;
-        font-size: 1.4rem;
-        line-height: 1.2;
-        margin-bottom: 0;
-        margin-top: -0.4rem;
-        a {
-          border: none;
-        }
-      }
-      .entry-meta{
-        margin-bottom: 0;
-      }
-    }
-  }
-  
-  
-  .alignleft{
-    margin-right: 1rem;
-  }
+
+.featured-content .entry {
+  border-bottom: 2px solid #f5f5f5;
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+  padding: 0 0 24px;
+  padding: 0 0 2.4rem;
 }
-section.layerslider_widget{
-  max-width: none;
-  padding: 0;
-  margin: 0;
+
+.featured-content .entry-title {
+  border: none;
+  font-size: 24px;
+  font-size: 2.4rem;
+  line-height: 1.2;
+}
+
+.featured-content .entry-title a {
+  border: none;
+}
+
+.widget_recent_entries{
+  li{
+    font-size: 1.4rem;
+    border-bottom: 1px solid fade(@ltbrown,50%);
+    padding-bottom: 1.8rem;
+    margin-bottom: 1.8rem;
+  }
+  .wp-post-image{
+    display: block;
+  }
+  .post-title{
+    font-weight: 700;
+    color: @brown;
+    font-size: 1.8rem;
+    margin: 0.3em 0 0.6em;
+    text-decoration: none;
+    border: 0;
+    display: block;
+  }
+  .readmore{
+    font-weight: 700;
+    color: @orange;
+    text-decoration: none;
+  }
 }
