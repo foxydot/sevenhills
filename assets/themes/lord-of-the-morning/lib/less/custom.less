@@ -1,27 +1,18 @@
-.post-type-archive-testimonial{
-  main.content{
-    .entry{
-      border-bottom: 1px solid fade(@ltbrown,50%);
-      .entry-content{
-        .quote{
-          text-align: center;
-          font-style: italic;
-          &:before{
-            content:'“';
-            font-size: 2em;
-            color: @orange;
-            float: left;
-            position: relative;
-            top: -0.3em;
-          }
-        }
-        .attribution{
-          text-align: right;
-          color: @ltbrown;
-          font-style: italic;
-          font-weight: 500;
-        }
-      }
-    }
+.page-title-area,.page-footer-area{
+  padding: 2rem 0;
+  text-align: center;
+  .entry-title:before{
+    content: ' ';
+    background-image: url(../img/bean.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: 4.5rem;
+    width: 4.5rem;
+    display: block;
+    margin: 2rem auto 1.6rem;
+  }
+  .intro-text,.footer-text{
+    padding: 2rem 0;
   }
 }

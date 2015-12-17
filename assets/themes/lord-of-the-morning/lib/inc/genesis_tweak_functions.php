@@ -255,15 +255,12 @@ function msdlab_do_title_area(){
     global $post;
     $postid = is_admin()?$_GET['post']:$post->ID;
     $template_file = get_post_meta($postid,'_wp_page_template',TRUE);
-    if ($template_file == 'page-sectioned.php') {
-        print '<div id="page-title-area" class="page-title-area">';
+    print '<div id="page-title-area" class="page-title-area">';
+        print '<div class="wrap">';
         do_action('msdlab_title_area');
         print '</div>';
-    } else { 
-        print '<div id="page-title-area" class="page-title-area">';
-        do_action('msdlab_title_area');
-        print '</div>';
-    }
+    print '</div>';
+
 }
 
 function msdlab_do_section_title(){
@@ -276,6 +273,16 @@ function msdlab_do_section_title(){
         genesis_do_post_title();
     } else {
         genesis_do_post_title();
+    }
+}
+
+function msdlab_do_page_footer_text(){
+    if(is_page()){
+        print '<div id="page-footer-area" class="page-footer-area">';
+        print '<div class="wrap">';
+        do_action('msdlab_footer_area');
+        print '</div>';
+    print '</div>';
     }
 }
 

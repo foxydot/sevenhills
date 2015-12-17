@@ -131,19 +131,25 @@ img.alignright,
 --------------------------------------------- */
 
 .entry-title, .archive-title {
-  font-size: 36px;
-  font-size: 3.6rem;
-  line-height: 1;
-  color: @ltbrown;
+  .customheader(3.4);
+  font-weight: 100;
+  line-height: 0.5;
+  color: @ltblue;
 }
 
 .entry-title a,
 .sidebar .widget-title a {
-  color: #333;
+  color: @ltblue;
 }
 
 .entry-title a:hover {
-  color: #666;
+  color: @blue;
+}
+.entry-subtitle {
+  .customheader(3.8);
+  font-weight: 800;
+  line-height: 0.5;
+  color: @green;
 }
 
 .widget-title {
