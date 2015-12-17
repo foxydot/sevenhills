@@ -6468,7 +6468,21 @@ Content Area
   list-style-type: decimal;
 }
 .entry-content ul li {
-  list-style-type: disc;
+  list-style-type: none;
+  margin-left: 28px;
+  text-indent: -28px;
+}
+.entry-content ul li:before {
+  content: '';
+  background-image: url(../img/bean.png);
+  background-position: center bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 2rem;
+  width: 2rem;
+  margin-top: 0.8rem;
+  margin-right: 0.8rem;
+  display: inline-block;
 }
 .entry-content ol ol,
 .entry-content ul ul {
@@ -7039,6 +7053,10 @@ Site Footer
 .page-title-area .footer-text,
 .page-footer-area .footer-text {
   padding: 2rem 0;
+}
+.page.about-us .site-inner {
+  background: url(../img/bkg-about-page.jpg) no-repeat center right;
+  background-size: cover;
 }
 /*
 Media Queries

@@ -32,7 +32,20 @@ Content Area
 }
 
 .entry-content ul li {
-  list-style-type: disc;
+  list-style-type: none;
+  margin-left: 28px;
+  text-indent: -28px;
+  &:before{
+    content: '';
+    background-image: url(../img/bean.png);
+    background-position: center bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 2rem; width: 2rem;
+    margin-top: 0.8rem;
+    margin-right: 0.8rem;
+    display: inline-block;
+  }
 }
 
 .entry-content ol ol,
