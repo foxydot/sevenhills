@@ -6651,7 +6651,7 @@ Footer Widgets
 .footer-widgets {
   font-size: 1.4rem;
   clear: both;
-  background: #9B7255 url(../img/bkg-ftr.png) center center;
+  background: #31251C url(../img/bkg-ftr.png) center center;
   padding: 2rem 0 57px 0;
   color: #FFF;
 }
@@ -7055,7 +7055,7 @@ Site Footer
   padding: 2rem 0;
 }
 .page.about-us .site-inner {
-  background: url(../img/bkg-about-page.jpg) no-repeat center right;
+  background: url(../img/bkg-about-page.jpg) no-repeat left center;
   background-size: cover;
 }
 /*

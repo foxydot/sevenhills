@@ -212,6 +212,35 @@ function msdlab_add_extra_theme_sidebars(){
             ));
 }
 
+function msdlab_do_blog_header(){
+    $home = get_option( 'page_for_posts' );
+    add_filter('genesis_post_title_text','msdlab_get_home_title');
+    global $subtitle_metabox;
+    $subtitle_metabox->the_meta($home);
+    $subtitle = $subtitle_metabox->get_the_value('subtitle');
+    $intro = $subtitle_metabox->get_the_value('intro');
+
+    if ( strlen( $subtitle ) > 0 )
+       $subtitle = sprintf( '<h2 class="entry-subtitle">%s</h2>', apply_filters( 'genesis_post_title_text', $subtitle ) );
+    
+    if ( strlen( $intro ) > 0 )
+        $intro = sprintf( '<div class="intro-text">%s</div>', apply_filters( 'the_content', $intro ) );
+    
+    genesis_do_post_title();  
+    
+    remove_filter('genesis_post_title_text','msdlab_get_home_title');
+    echo apply_filters( 'genesis_post_title_output', $subtitle ) . "\n";
+    echo  $intro . "\n";
+}
+
+function msdlab_get_home_title($title){
+    if(is_home()){
+        $home = get_option( 'page_for_posts' );
+        $title = get_the_title($home);
+    }
+    return $title;
+}
+
 function msdlab_do_blog_sidebar(){
     if(is_active_sidebar('blog')){
         dynamic_sidebar('blog');
@@ -241,9 +270,16 @@ function msdlab_ro_layout_logic() {
 function msdlab_maybe_move_title(){
     global $post;
     $template_file = get_post_meta($post->ID,'_wp_page_template',TRUE);
-    if(is_page()){
+    if(is_page() || is_single()){
         remove_action('genesis_entry_header','genesis_do_post_title'); //move the title out of the content area
-        add_action('msdlab_title_area','msdlab_do_section_title');
+        add_action('msdlab_title_area','genesis_do_post_title');
+        add_action( 'msdlab_title_area', 'msdlab_do_post_subtitle' );
+        add_action( 'msdlab_title_area', 'msdlab_do_post_intro' );
+        add_action('genesis_after_header','msdlab_do_title_area');
+        add_action('msdlab_footer_area','msdlab_do_post_footer');
+        add_action('genesis_before_footer','msdlab_do_page_footer_text',5);
+    } elseif(is_home()){
+        add_action('msdlab_title_area','msdlab_do_blog_header');
         add_action('genesis_after_header','msdlab_do_title_area');
     }
 }
