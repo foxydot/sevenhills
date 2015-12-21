@@ -275,19 +275,21 @@ function msdlab_maybe_move_title(){
         add_action('msdlab_title_area','genesis_do_post_title');
         add_action( 'msdlab_title_area', 'msdlab_do_post_subtitle' );
         add_action( 'msdlab_title_area', 'msdlab_do_post_intro' );
-        add_action('genesis_after_header','msdlab_do_title_area');
         add_action('msdlab_footer_area','msdlab_do_post_footer');
-        add_action('genesis_before_footer','msdlab_do_page_footer_text',5);
+        if(is_front_page()){
+            add_action('genesis_header','msdlab_do_title_area');
+            add_action('genesis_header','msdlab_do_page_footer_text');
+        } else {
+            add_action('genesis_after_header','msdlab_do_title_area');
+            add_action('genesis_before_footer','msdlab_do_page_footer_text',5);
+        }
     } elseif(is_home()){
         add_action('msdlab_title_area','msdlab_do_blog_header');
         add_action('genesis_after_header','msdlab_do_title_area');
-    }
+    } 
 }
  
 function msdlab_do_title_area(){
-    if(is_front_page()){
-        return FALSE;
-    }
     global $post;
     $postid = is_admin()?$_GET['post']:$post->ID;
     $template_file = get_post_meta($postid,'_wp_page_template',TRUE);

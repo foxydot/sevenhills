@@ -2,5 +2,27 @@
 @import 'mixins';
 
 .site-inner{
-  //display: none;
+  display: none;
+}
+.site-header{
+  .page-title-area,.page-footer-area{
+    clear: both; 
+    float: none;
+    .entry-title,.entry-subtitle{
+      color: @white;
+      line-height: 1.2;
+    }
+    .entry-title{
+      padding-bottom: 0.2rem;
+      margin-bottom: 0.2rem;
+      width: auto;
+      display: inline-block;
+      border-bottom: 1px solid fade(@white,50%);
+      &:before{
+        content: '';
+        margin: 0;
+        height: 0;
+      }
+    }
+  }
 }

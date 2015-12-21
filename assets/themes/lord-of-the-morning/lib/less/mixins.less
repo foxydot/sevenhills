@@ -87,7 +87,7 @@
 
 
 /* Buttons */
-.button(@background:@orange,@color:@white) {
+.button(@background:@white,@color:@white) {
   padding: 6px 24px;
   .customsanserif;
   color: @color;
@@ -97,17 +97,17 @@
   display: table;
   margin: 12px auto;
   text-decoration: none;
-  background-color: @background;
-  border: 0;
+  background-color: fade(@background,0%);
+  border: 2px solid @color;
 }
 
 .button{
   .button();
 }
 
-.button-hover(@background:@orange,@color:@white) {
+.button-hover(@background:@white,@color:@white) {
   .button(@background,@color);
-  background-color: fade(@background,80%);
+  background-color: fade(@background,40%);
 }
 
 .button:hover,

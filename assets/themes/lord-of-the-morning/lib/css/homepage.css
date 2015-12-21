@@ -30,8 +30,8 @@
   display: table;
   margin: 12px auto;
   text-decoration: none;
-  background-color: #FC7136;
-  border: 0;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid #FFF;
 }
 .button:hover,
 .button a:hover {
@@ -48,9 +48,9 @@
   display: table;
   margin: 12px auto;
   text-decoration: none;
-  background-color: #FC7136;
-  border: 0;
-  background-color: rgba(252, 113, 54, 0.8);
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid #FFF;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 /* Arrows */
 /* Clears */
@@ -60,4 +60,33 @@
   height: 0;
   clear: both;
   visibility: hidden;
+}
+.site-inner {
+  display: none;
+}
+.site-header .page-title-area,
+.site-header .page-footer-area {
+  clear: both;
+  float: none;
+}
+.site-header .page-title-area .entry-title,
+.site-header .page-footer-area .entry-title,
+.site-header .page-title-area .entry-subtitle,
+.site-header .page-footer-area .entry-subtitle {
+  color: #FFF;
+  line-height: 1.2;
+}
+.site-header .page-title-area .entry-title,
+.site-header .page-footer-area .entry-title {
+  padding-bottom: 0.2rem;
+  margin-bottom: 0.2rem;
+  width: auto;
+  display: inline-block;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.site-header .page-title-area .entry-title:before,
+.site-header .page-footer-area .entry-title:before {
+  content: '';
+  margin: 0;
+  height: 0;
 }

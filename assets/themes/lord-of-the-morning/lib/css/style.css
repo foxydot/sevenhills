@@ -5560,8 +5560,8 @@ td.visible-print {
   display: table;
   margin: 12px auto;
   text-decoration: none;
-  background-color: #FC7136;
-  border: 0;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid #FFF;
   -webkit-transition: all 0.1s ease-in-out;
   -moz-transition: all 0.1s ease-in-out;
   -ms-transition: all 0.1s ease-in-out;
@@ -5583,9 +5583,9 @@ td.visible-print {
   display: table;
   margin: 12px auto;
   text-decoration: none;
-  background-color: #FC7136;
-  border: 0;
-  background-color: rgba(252, 113, 54, 0.8);
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid #FFF;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 /* Arrows */
 /* Clears */
@@ -6219,7 +6219,7 @@ Site Header
 ---------------------------------------------------------------------------------------------------- */
 .site-header {
   background-color: #5D4631;
-  background-image: url(../img/bkg-hdr.png);
+  background-image: url(../img/bkg-hdr.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   min-height: 360px;
@@ -6677,8 +6677,8 @@ Footer Widgets
   display: table;
   margin: 12px auto;
   text-decoration: none;
-  background-color: #FC7136;
-  border: 0;
+  background-color: rgba(252, 113, 54, 0);
+  border: 2px solid #FFF;
   margin: 12px 0;
 }
 .footer-widgets input[type="submit"]:hover,
@@ -6697,9 +6697,9 @@ Footer Widgets
   display: table;
   margin: 12px auto;
   text-decoration: none;
-  background-color: #FC7136;
-  border: 0;
-  background-color: rgba(252, 113, 54, 0.8);
+  background-color: rgba(252, 113, 54, 0);
+  border: 2px solid #FFF;
+  background-color: rgba(252, 113, 54, 0.4);
   margin: 12px 0;
 }
 .footer-widgets .widget-area {
@@ -6922,88 +6922,38 @@ Site Footer
 }
 .sectioned-page-wrapper .section {
   margin-bottom: 2rem;
-}
-.sectioned-page-wrapper .section .section-body .row .section-content .woocommerce .products .product {
-  width: 100%;
-  padding: 5%;
-  border: 1px solid #CCC;
-  margin-bottom: 0;
-  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9Imxlc3NoYXQtZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkYiIHN0b3Atb3BhY2l0eT0iMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2YyZWZlZiIgc3RvcC1vcGFjaXR5PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2xlc3NoYXQtZ2VuZXJhdGVkKSIgLz48L3N2Zz4=);
-  background-image: -webkit-linear-gradient(top, #FFF 0%, #f2efef 100%);
-  background-image: -moz-linear-gradient(top, #FFF 0%, #f2efef 100%);
-  background-image: -o-linear-gradient(top, #FFF 0%, #f2efef 100%);
-  background-image: linear-gradient(to bottom, #FFF 0%, #f2efef 100%);
-}
-.sectioned-page-wrapper .section .section-body .row .section-content .woocommerce .products .product .product-image {
-  float: left;
-  width: 120px;
-  height: 120px;
-  margin-right: 5%;
-}
-.sectioned-page-wrapper .section .section-body .row .section-content .woocommerce .products .product .product-content {
-  float: left;
-}
-.sectioned-page-wrapper .section .section-body .row .section-content .woocommerce .products .product .product-content a h3 {
-  padding-top: 0;
-  text-transform: uppercase;
-}
-.sectioned-page-wrapper .section .section-body .msdlab_testimonial_gallery {
-  padding-bottom: 2rem;
-  border-bottom: 1px solid #CCC;
   text-align: center;
 }
-.sectioned-page-wrapper .section .section-body .msdlab_testimonial_gallery .title h3 {
-  color: #9B7255;
-  font-weight: 900;
+.sectioned-page-wrapper .section .section-title h3 {
+  font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
+  font-weight: 300;
+  font-size: 34px;
+  font-size: 3.4rem;
+  line-height: 1.625;
+  font-weight: 100;
+  line-height: 1.2;
+  color: #9EB9E0;
 }
-.sectioned-page-wrapper .section .section-body .msdlab_testimonial_gallery .quote {
-  width: 80%;
-  margin: 0 auto;
-  font-style: italic;
-}
-.sectioned-page-wrapper .section .section-body .msdlab_testimonial_gallery .attribution {
-  width: 20%;
-  float: right;
-  color: #FC7136;
-  font-weight: 500;
-  font-style: italic;
-}
-.sectioned-page-wrapper .section .section-body .msdlab_testimonial_gallery:after {
-  content: ".";
+.sectioned-page-wrapper .section .section-title:before {
+  content: ' ';
+  background-image: url(../img/bean.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  height: 4.5rem;
+  width: 4.5rem;
   display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
+  margin: 2rem auto 1.6rem;
 }
-.sectioned-page-wrapper .column-gradient .section-body .row {
-  margin: 0;
-}
-.sectioned-page-wrapper .column-gradient .section-body .row .section-content {
-  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9Imxlc3NoYXQtZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkYiIHN0b3Atb3BhY2l0eT0iMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2YyZWZlZiIgc3RvcC1vcGFjaXR5PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2xlc3NoYXQtZ2VuZXJhdGVkKSIgLz48L3N2Zz4=);
-  background-image: -webkit-linear-gradient(top, #FFF 0%, #f2efef 100%);
-  background-image: -moz-linear-gradient(top, #FFF 0%, #f2efef 100%);
-  background-image: -o-linear-gradient(top, #FFF 0%, #f2efef 100%);
-  background-image: linear-gradient(to bottom, #FFF 0%, #f2efef 100%);
-  font-size: 1.4rem;
-  padding: 2em;
-}
-.sectioned-page-wrapper .column-outline .section-body .row {
-  margin: 0;
-}
-.sectioned-page-wrapper .column-outline .section-body .row .section-content {
-  border: 1px solid #CCC;
-  border-right: 0;
-}
-.sectioned-page-wrapper .column-outline .section-body .row .section-content.last-child {
-  border-right: 1px solid #CCC;
-}
-.sectioned-page-wrapper .section-endorsements .section-title {
-  text-align: center;
-}
-.sectioned-page-wrapper .section-endorsements .section-title h3 {
-  background: #31251C;
-  padding: 0.4em;
-  color: #FFF;
+.sectioned-page-wrapper .section .section-subtitle {
+  font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
+  font-weight: 300;
+  font-size: 38px;
+  font-size: 3.8rem;
+  line-height: 1.625;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #197F3F;
 }
 .woocommerce #respond input#submit,
 .woocommerce a.button,
@@ -7022,8 +6972,8 @@ Site Footer
   display: table;
   margin: 12px auto;
   text-decoration: none;
-  background-color: #FC7136;
-  border: 0;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid #FFF;
   -webkit-transition: all 0.1s ease-in-out;
   -moz-transition: all 0.1s ease-in-out;
   -ms-transition: all 0.1s ease-in-out;
