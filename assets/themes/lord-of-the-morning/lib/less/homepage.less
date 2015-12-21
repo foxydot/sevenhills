@@ -29,11 +29,12 @@
 
 .sectioned-page-wrapper{
   .section{
+    margin: 0;
     &.section-training{
       background-repeat: no-repeat;
       background-color: @dkgrey;
       background-size: cover;
-      min-height: 30vw;
+      min-height: 40vw;
       padding: 3vw 0;
       .section-title{
         text-shadow: 0 0 4px #333;
@@ -46,6 +47,31 @@
           margin: 0 auto;
           text-shadow: 0 0 4px #333;
         }
+      }
+    }
+    &.section-testimonials{
+      position: relative;
+      min-height: 40vw;
+      .parallax{
+        background-repeat: no-repeat;
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+      }
+      .level1{
+        background-image: url(../img/testimonial-layer-1.png);
+      }
+      .level2{
+        background-image: url(../img/testimonial-layer-2.png);
+      }
+      .level3{
+        background-image: url(../img/testimonial-layer-3.png);
+      }
+      .level4{
+        background-image: url(../img/testimonial-layer-4.png);
       }
     }
   }

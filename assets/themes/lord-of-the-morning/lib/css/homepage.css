@@ -90,11 +90,14 @@
   margin: 0;
   height: 0;
 }
+.sectioned-page-wrapper .section {
+  margin: 0;
+}
 .sectioned-page-wrapper .section.section-training {
   background-repeat: no-repeat;
   background-color: #666;
   background-size: cover;
-  min-height: 30vw;
+  min-height: 40vw;
   padding: 3vw 0;
 }
 .sectioned-page-wrapper .section.section-training .section-title {
@@ -106,4 +109,29 @@
   width: 80%;
   margin: 0 auto;
   text-shadow: 0 0 4px #333;
+}
+.sectioned-page-wrapper .section.section-testimonials {
+  position: relative;
+  min-height: 40vw;
+}
+.sectioned-page-wrapper .section.section-testimonials .parallax {
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.sectioned-page-wrapper .section.section-testimonials .level1 {
+  background-image: url(../img/testimonial-layer-1.png);
+}
+.sectioned-page-wrapper .section.section-testimonials .level2 {
+  background-image: url(../img/testimonial-layer-2.png);
+}
+.sectioned-page-wrapper .section.section-testimonials .level3 {
+  background-image: url(../img/testimonial-layer-3.png);
+}
+.sectioned-page-wrapper .section.section-testimonials .level4 {
+  background-image: url(../img/testimonial-layer-4.png);
 }
