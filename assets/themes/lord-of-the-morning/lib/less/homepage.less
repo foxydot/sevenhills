@@ -26,3 +26,27 @@
     }
   }
 }
+
+.sectioned-page-wrapper{
+  .section{
+    &.section-training{
+      background-repeat: no-repeat;
+      background-color: @dkgrey;
+      background-size: cover;
+      min-height: 30vw;
+      padding: 3vw 0;
+      .section-title{
+        text-shadow: 0 0 4px #333;
+      }
+      .section-body{
+        p{
+          color: @white;
+          font-size: 2.4rem;
+          width: 80%;
+          margin: 0 auto;
+          text-shadow: 0 0 4px #333;
+        }
+      }
+    }
+  }
+}

@@ -90,3 +90,20 @@
   margin: 0;
   height: 0;
 }
+.sectioned-page-wrapper .section.section-training {
+  background-repeat: no-repeat;
+  background-color: #666;
+  background-size: cover;
+  min-height: 30vw;
+  padding: 3vw 0;
+}
+.sectioned-page-wrapper .section.section-training .section-title {
+  text-shadow: 0 0 4px #333;
+}
+.sectioned-page-wrapper .section.section-training .section-body p {
+  color: #FFF;
+  font-size: 2.4rem;
+  width: 80%;
+  margin: 0 auto;
+  text-shadow: 0 0 4px #333;
+}
