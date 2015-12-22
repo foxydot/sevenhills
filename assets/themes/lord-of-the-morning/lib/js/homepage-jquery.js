@@ -21,7 +21,7 @@ jQuery(document).ready(function($) {
         vw = 15;
     }
     console.log(vw);
-    var testimonial_controller = new ScrollMagic({globalSceneOptions: {triggerHook: "onEnter",triggerElement:".section-testimonials",duration:$(window).height()}});
+    var testimonial_controller = new ScrollMagic({globalSceneOptions: {triggerHook: "onEnter",triggerElement:".section-testimonials",duration:$(window).height()*1.2}});
     var testimonial_tween = new TimelineMax()
         .add([
             TweenMax.fromTo("#testimonials .level1", 1, {css:{'background-position':"-2% 200%",'background-size':vw*0.7+'%'}, ease: Linear.easeNone}, {css:{'background-position':"-2% 10%"}, ease: Linear.easeNone}),
@@ -32,6 +32,5 @@ jQuery(document).ready(function($) {
     // build scenes
     new ScrollScene()
     .setTween(testimonial_tween)
-    .addTo(testimonial_controller)
-    .addIndicators();
+    .addTo(testimonial_controller);
 });

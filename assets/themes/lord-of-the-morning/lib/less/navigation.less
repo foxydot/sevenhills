@@ -13,7 +13,6 @@ Site Navigation
 .genesis-nav-menu .menu-item {
   display: block;
   float: left;
-  text-align: left;
 }
 
 .genesis-nav-menu a {
@@ -109,17 +108,6 @@ Site Navigation
   padding: 1.4rem 0 0;
 }
 
-/* Site Header Navigation
---------------------------------------------- */
-
-.site-header .sub-menu {
-  border-top: 1px solid #eee;
-}
-
-.site-header .sub-menu .sub-menu {
-  margin-top: -55px;
-}
-
 /* Primary Navigation
 --------------------------------------------- */
 
@@ -128,10 +116,13 @@ Site Navigation
   li{
     width: 12.5%;
     margin-top: 75px;
+    text-align: center;
     a{
       color :@white;
       padding: 0.4rem;
       text-align: center;
+      border-bottom: 1px solid fade(@white,0%);
+      display: inline;
     }
     &.logo{
       background-color: transparent;
@@ -150,14 +141,42 @@ Site Navigation
   }
 }
 
-.nav-primary a:hover,
-.nav-primary .current-menu-item > a {
-  color: @orange;
+.nav-primary .menu li a:hover,
+.nav-primary .menu > .current-menu-item > a {
+  color: @white;
   text-decoration: none;
+  border-bottom: 1px solid @white;
 }
 
-.nav-primary .sub-menu a:hover {
-  color: @orange;
+.nav-primary li.logo a:hover,
+.nav-primary li.logo.current-menu-item>a{
+  border-bottom: 1px solid  fade(@white,0%);
+}
+
+.nav-primary{
+  .menu{
+    >li{
+      .sub-menu{
+        width:100%;
+        li{
+          margin: 0;
+          float: none;
+          display: block;
+          padding: .5em 0;
+          a{
+            background-color: fade(@white,0%);
+            border:0;
+            padding: .5em 0;
+            &:hover{
+              color: @white;
+              text-decoration: none;
+              border-bottom: 1px solid @white;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 /* Secondary Navigation

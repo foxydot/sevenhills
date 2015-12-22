@@ -186,7 +186,7 @@ function msdlab_do_nav() {
     genesis_nav_menu( array(
         'theme_location' => 'primary',
         'menu_class'     => $class,
-        'walker' => new Description_Walker,
+        //'walker' => new Description_Walker,
     ) );
 
 }

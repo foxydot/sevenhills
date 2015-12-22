@@ -100,9 +100,6 @@
   min-height: 40vw;
   padding: 3vw 0;
 }
-.sectioned-page-wrapper .section.section-training .section-title {
-  text-shadow: 0 0 4px #333;
-}
 .sectioned-page-wrapper .section.section-training .section-body p {
   color: #FFF;
   font-size: 2.4rem;
