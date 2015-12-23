@@ -6825,8 +6825,8 @@ Footer Widgets
 .footer-widgets .connected-social .social-media a.fa {
   background: transparent;
   margin: 5px;
-  height: 40px;
-  width: 40px;
+  height: auto;
+  width: auto;
   font-size: 2.8rem;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.3);
@@ -6890,6 +6890,9 @@ Footer Widgets
 }
 .footer-widgets .search-form input:focus {
   border: 0 solid #ddd;
+}
+.footer-widgets .widget_nav_menu .menu .sub-menu {
+  display: none;
 }
 /*
 Site Footer
