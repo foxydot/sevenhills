@@ -3,7 +3,8 @@ add_shortcode('button','msdlab_button_function');
 function msdlab_button_function($atts, $content = null){	
 	extract( shortcode_atts( array(
       'url' => null,
-	  'target' => '_self'
+	  'target' => '_self',
+	  'style' => 'button'
       ), $atts ) );
       if(strstr($url,'mailto:',0)){
           $parts = explode(':',$url);
@@ -11,9 +12,19 @@ function msdlab_button_function($atts, $content = null){
               $url = $parts[0].':'.antispambot($parts[1]);
           }
       }
-	$ret = '<div class="button-wrapper">
-<a class="button" href="'.$url.'" target="'.$target.'">'.remove_wpautop($content).'</a>
-</div>';
+      switch($style){
+          case 'coffee':
+            $ret = '<div class="coffee-button-wrapper">
+        <a href="'.$url.'" target="'.$target.'">'.remove_wpautop($content).'</a>
+        </div>';
+              break;
+          case 'button':
+          default:
+            $ret = '<div class="button-wrapper">
+        <a class="button" href="'.$url.'" target="'.$target.'">'.remove_wpautop($content).'</a>
+        </div>';
+              break;
+      }
 	return $ret;
 }
 add_shortcode('hero','msdlab_landing_page_hero');
@@ -115,4 +126,22 @@ function msdlab_icon_shortcodes($atts){
 add_shortcode('decoration', 'msdlab_decoration');
 function msdlab_decoration($atts){
     return '<div class="decoration"></div>';
+}
+add_shortcode('scroll', 'msdlab_scroll');
+function msdlab_scroll($atts,$content){
+    extract( shortcode_atts( array(
+      'target' => 'sectioned-page-wrapper',
+      'style' => 'mouse'
+      ), $atts ) );
+    $ret = '<script type="text/javascript">
+        jQuery(document).ready(function($) {    
+            $("#scroll-to-'.$target.'").click(function() {
+                $(\'html,body\').animate({
+                    scrollTop: $("#'.$target.'").offset().top},
+                    \'slow\');
+            });
+        });
+    </script>';
+    $ret .= '<div id="scroll-to-'.$target.'" class="scroll '.$style.'">'.apply_filters('the_content', $content).'</div>';
+    return $ret;
 }

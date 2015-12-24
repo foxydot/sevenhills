@@ -32,7 +32,9 @@ Media Queries
 
 /* Responsive Design Custom Styles
 ------------------------------------------------------------ */
-
+/* If it goes wider than the layout */
+@media only screen and (max-width: 1500px) {
+}
 /* Smaller screens */
 
 @media only screen and (max-width: 1023px) {
@@ -51,8 +53,12 @@ Media Queries
         .site-title{
           a{
             width: 100%;
+            min-height: 100px;
             margin: 1rem auto;
             float: none;
+            display: inline-block;
+            background-size: contain;
+            background-position: center center;
           }
         }
       }
@@ -77,31 +83,34 @@ Media Queries
       width: 100%;
       position: relative;
       text-indent: 20px;
-      background: @blue;
+      background: @ltbrown;
       min-height: 46px;
       padding-top: 14px;
       position: relative;
       > strong {
         color: #fff;
         text-decoration: none;
-        text-shadow:1px 1px 1px rgba(0, 0, 0, 0.78);
         font-size: 1.2rem;
       }
       ul#mobile_menu {
         margin-top: 14px;
-        border-top: 1px solid @ltgrey;
+        border-top: 1px solid fade(@white,20%);
         li{
           display: block;
           list-style: none;
           padding: 0;
+          width: 100%;
+          margin-top: 0;
           a{
-            background: @blue;
+            background: @ltbrown;
             color: @white;
             display: block;
             width: 100%;
             padding: 0.5em;
-            border-bottom: 1px solid @ltgrey;
+            border-bottom: 1px solid fade(@white,20%);
             font-size: 1.2rem;
+            margin-top: 0;
+            text-align: left;
             .toggle-switch{
               right: 15px;
               i{
@@ -109,7 +118,8 @@ Media Queries
             }
           }
           a:hover{
-            background: lighten(@blue,10%);
+            background: lighten(@ltbrown,10%);
+            text-decoration: none;
           }
           .toggle-switch{
             margin-right: 12px;
@@ -141,13 +151,16 @@ Media Queries
               }
             }
           }
+          &.logo{
+            display: none;
+          }
         }
         li.separator{
           display: none;
         }
         li.current-menu-item{
           a{
-          background: lighten(@blue, 15%);
+          background: lighten(@ltbrown, 15%);
           }
         }
       }
@@ -161,7 +174,7 @@ Media Queries
     font-family: 'FontAwesome';
     font-size: 2.2rem;
     text-indent: 0;
-    color: @blue;
+    color: @ltbrown;
     text-align: center;
     width: 30px;
     height: 30px;
@@ -171,7 +184,15 @@ Media Queries
     position: absolute;
     right: 15px;
     top: 10px;
-  }  
+  }    
+  .coffee-button-wrapper{
+    a,a:hover{
+      width: 30rem;
+      height: 13rem;
+      padding-top: 8.5rem;
+      font-size: 1.2rem;
+    }
+  }
 }
 
 /* Mobile */

@@ -30,13 +30,16 @@
 .sectioned-page-wrapper{
   .section{
     margin: 0;
+    iframe{
+      min-width: 60vw;
+      min-height: 33.33vw;
+    }
     &.section-training{
       background-repeat: no-repeat;
       background-color: @dkgrey;
       background-size: cover;
-      min-height: 40vw;
-      padding: 3vw 0;
       .section-title{
+        padding: 3vw 0 0 0;
         //text-shadow: 0 0 4px #333;
       }
       .section-body{
@@ -46,6 +49,10 @@
           width: 80%;
           margin: 0 auto;
           text-shadow: 0 0 4px #333;
+        }
+        .coffee-button-wrapper{
+          -webkit-filter: saturate(0) brightness(100);
+          filter: saturate(0) brightness(100);
         }
       }
     }

@@ -1,5 +1,4 @@
 .page-title-area,.page-footer-area{
-  padding: 2rem 0;
   text-align: center;
   .entry-title:before{
     content: ' ';
@@ -12,8 +11,11 @@
     display: block;
     margin: 2rem auto 1.6rem;
   }
-  .intro-text,.footer-text{
+  .intro-text{
     padding: 2rem 0;
+  }
+  .footer-text{
+    padding: 4rem 0;
   }
 }
 .page.about-us{
@@ -22,6 +24,39 @@
     background-size: cover;
     main.content{
     }
+  }
+}
+
+.coffee-button-wrapper{
+  margin-top: 3vw;
+  a,a:hover{
+    display: block;
+    margin: 0 auto;
+    background-image: url(../img/cup.svg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30vw;
+    height: 13vw;
+    padding-top: 8.5vw;
+    color: @ltbrown;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.2vw;
+  }
+}
+
+.scroll{
+  color: @white;
+  margin-top: 6rem;
+  &:before{
+    height: 6rem;
+    width: 100%;
+    background-image: url(../img/scroll-mouse.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    content: '';
+    display: block;
   }
 }
 

@@ -5536,7 +5536,7 @@ td.visible-print {
 .customsanserif {
   font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 24px;
   font-size: 1.6rem;
   line-height: 1.625;
 }
@@ -5550,7 +5550,7 @@ td.visible-print {
   padding: 6px 24px;
   font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 24px;
   font-size: 1.6rem;
   line-height: 1.625;
   color: #FFF;
@@ -5573,7 +5573,7 @@ td.visible-print {
   padding: 6px 24px;
   font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 24px;
   font-size: 1.6rem;
   line-height: 1.625;
   color: #FFF;
@@ -5608,7 +5608,7 @@ html {
 body {
   font-family: "Raleway", "Helvetica Neue", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 24px;
   font-size: 1.6rem;
   line-height: 1.625;
 }
@@ -5975,7 +5975,7 @@ img.alignright,
 .entry-title,
 .archive-title {
   font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
-  font-size: 34px;
+  font-size: 51px;
   font-size: 3.4rem;
   line-height: 1.625;
   font-weight: 300;
@@ -5993,7 +5993,7 @@ img.alignright,
 .entry-subtitle {
   font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 300;
-  font-size: 38px;
+  font-size: 57px;
   font-size: 3.8rem;
   line-height: 1.625;
   font-weight: 800;
@@ -6055,7 +6055,7 @@ Widgets
 }
 .widget_recent_entries li {
   font-size: 1.4rem;
-  border-bottom: 1px solid rgba(155, 114, 85, 0.5);
+  border-bottom: 1px solid rgba(122, 95, 76, 0.5);
   padding-bottom: 1.8rem;
   margin-bottom: 1.8rem;
 }
@@ -6118,7 +6118,7 @@ img#wpstats {
 /*LayerSlider*/
 .testimonial-slider-title {
   margin: 0 auto;
-  color: #9B7255;
+  color: #7A5F4C;
   font-weight: 900;
   font-size: 28px;
 }
@@ -6683,7 +6683,7 @@ Footer Widgets
   padding: 6px 24px;
   font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 24px;
   font-size: 1.6rem;
   line-height: 1.625;
   color: #FFF;
@@ -6703,7 +6703,7 @@ Footer Widgets
   padding: 6px 24px;
   font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 24px;
   font-size: 1.6rem;
   line-height: 1.625;
   color: #FFF;
@@ -6902,7 +6902,7 @@ Site Footer
   color: #FFF;
   font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 300;
-  font-size: 10px;
+  font-size: 15px;
   font-size: 1rem;
   line-height: 1.625;
   text-align: center;
@@ -6945,7 +6945,7 @@ Site Footer
 }
 .sectioned-page-wrapper .section .section-title h3 {
   font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
-  font-size: 34px;
+  font-size: 51px;
   font-size: 3.4rem;
   line-height: 1.625;
   font-weight: 300;
@@ -6966,7 +6966,7 @@ Site Footer
 .sectioned-page-wrapper .section .section-subtitle {
   font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 300;
-  font-size: 38px;
+  font-size: 57px;
   font-size: 3.8rem;
   line-height: 1.625;
   font-weight: 800;
@@ -6980,7 +6980,7 @@ Site Footer
   padding: 6px 24px;
   font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 24px;
   font-size: 1.6rem;
   line-height: 1.625;
   color: #FFF;
@@ -7001,7 +7001,6 @@ Site Footer
 }
 .page-title-area,
 .page-footer-area {
-  padding: 2rem 0;
   text-align: center;
 }
 .page-title-area .entry-title:before,
@@ -7017,14 +7016,48 @@ Site Footer
   margin: 2rem auto 1.6rem;
 }
 .page-title-area .intro-text,
-.page-footer-area .intro-text,
+.page-footer-area .intro-text {
+  padding: 2rem 0;
+}
 .page-title-area .footer-text,
 .page-footer-area .footer-text {
-  padding: 2rem 0;
+  padding: 4rem 0;
 }
 .page.about-us .site-inner {
   background: url(../img/bkg-about-page.jpg) no-repeat left center;
   background-size: cover;
+}
+.coffee-button-wrapper {
+  margin-top: 3vw;
+}
+.coffee-button-wrapper a,
+.coffee-button-wrapper a:hover {
+  display: block;
+  margin: 0 auto;
+  background-image: url(../img/cup.svg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30vw;
+  height: 13vw;
+  padding-top: 8.5vw;
+  color: #7A5F4C;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.2vw;
+}
+.scroll {
+  color: #FFF;
+  margin-top: 6rem;
+}
+.scroll:before {
+  height: 6rem;
+  width: 100%;
+  background-image: url(../img/scroll-mouse.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  content: '';
+  display: block;
 }
 .decoration {
   display: block;
@@ -7055,6 +7088,7 @@ Media Queries
 }
 /* Responsive Design Custom Styles
 ------------------------------------------------------------ */
+/* If it goes wider than the layout */
 /* Smaller screens */
 @media only screen and (max-width: 1023px) {
   /* Enter Your Custom Styles Here */
@@ -7072,8 +7106,12 @@ Media Queries
   }
   .header-image .site-header .title-area .site-title a {
     width: 100%;
+    min-height: 100px;
     margin: 1rem auto;
     float: none;
+    display: inline-block;
+    background-size: contain;
+    background-position: center center;
   }
   .header-image .site-header .nav-primary {
     margin: 0 auto;
@@ -7095,7 +7133,7 @@ Media Queries
     display: inline-block;
     width: 100%;
     text-indent: 20px;
-    background: #00f;
+    background: #7A5F4C;
     min-height: 46px;
     padding-top: 14px;
     position: relative;
@@ -7103,32 +7141,36 @@ Media Queries
   .nav-responsive a#pull > strong {
     color: #fff;
     text-decoration: none;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.78);
     font-size: 1.2rem;
   }
   .nav-responsive a#pull ul#mobile_menu {
     margin-top: 14px;
-    border-top: 1px solid #CCC;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
   }
   .nav-responsive a#pull ul#mobile_menu li {
     display: block;
     list-style: none;
     padding: 0;
+    width: 100%;
+    margin-top: 0;
   }
   .nav-responsive a#pull ul#mobile_menu li a {
-    background: #00f;
+    background: #7A5F4C;
     color: #FFF;
     display: block;
     width: 100%;
     padding: 0.5em;
-    border-bottom: 1px solid #CCC;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     font-size: 1.2rem;
+    margin-top: 0;
+    text-align: left;
   }
   .nav-responsive a#pull ul#mobile_menu li a .toggle-switch {
     right: 15px;
   }
   .nav-responsive a#pull ul#mobile_menu li a:hover {
-    background: #3333ff;
+    background: #997760;
+    text-decoration: none;
   }
   .nav-responsive a#pull ul#mobile_menu li .toggle-switch {
     margin-right: 12px;
@@ -7154,11 +7196,14 @@ Media Queries
   .nav-responsive a#pull ul#mobile_menu li ul.sub-menu li ul li ul li a {
     text-indent: 80px;
   }
+  .nav-responsive a#pull ul#mobile_menu li.logo {
+    display: none;
+  }
   .nav-responsive a#pull ul#mobile_menu li.separator {
     display: none;
   }
   .nav-responsive a#pull ul#mobile_menu li.current-menu-item a {
-    background: #4d4dff;
+    background: #a5846e;
   }
   .nav-responsive a#pull:hover {
     text-decoration: none;
@@ -7168,7 +7213,7 @@ Media Queries
     font-family: 'FontAwesome';
     font-size: 2.2rem;
     text-indent: 0;
-    color: #00f;
+    color: #7A5F4C;
     text-align: center;
     width: 30px;
     height: 30px;
@@ -7183,6 +7228,13 @@ Media Queries
     position: absolute;
     right: 15px;
     top: 10px;
+  }
+  .coffee-button-wrapper a,
+  .coffee-button-wrapper a:hover {
+    width: 30rem;
+    height: 13rem;
+    padding-top: 8.5rem;
+    font-size: 1.2rem;
   }
 }
 /* Mobile */
