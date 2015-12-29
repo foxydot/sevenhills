@@ -46,6 +46,63 @@
   }
 }
 
+.msdlab_testimonial_gallery{
+  .carousel-control{
+    background-image: none;
+    color: @brown;
+    font-size: 5rem;
+    text-shadow: none;
+    width: 5%;
+    &.left{}
+    &.right{}
+    padding-top: 80px;
+  }
+  .carousel-inner{
+    background-image:url(../img/coffee-cups-background.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    .item{
+      .logo{
+        img{
+          padding: 70px 0;
+        }
+      }
+      .attribution{
+        font-size: 1.4rem;
+        color: @beige;
+      }
+      .quote{
+        font-size: 1.4rem;
+        font-style: italic;
+        color: @medgrey;
+        margin: 2em auto;
+        max-width: 800px;
+        p{
+          position: relative;
+        }
+        p.first-child:before,p.last-child:after{
+          font-size: 6em;
+          font-weight: 700;
+          color: fade(@brown,30%);
+          display: inline;
+          font-family: 'Montserrat', sans-serif;
+          position: absolute;
+        }
+        p.first-child:before{
+          content: '“';
+          top: -0.5em;
+          margin-left: -0.75em;
+        }
+        p.last-child:after{
+          content: '”';
+          bottom: -0.85em;
+          margin-right: -0.75em;
+        }
+      }
+    }
+  }
+}
+
 .scroll{
   color: @white;
   margin-top: 6rem;

@@ -32,8 +32,16 @@
         </li>
     
     <li>
-        <?php $metabox->the_field('company'); ?>
-            <label>Attribution Company</label>
+        <?php $metabox->the_field('organization'); ?>
+            <label>Attribution Organization</label>
+            <div class="input_container">
+                <input type="text" value="<?php $metabox->the_value(); ?>" id="<?php $metabox->the_name(); ?>" name="<?php $metabox->the_name(); ?>">
+           </div>
+        </li>
+    
+    <li>
+        <?php $metabox->the_field('location'); ?>
+            <label>Attribution Location</label>
             <div class="input_container">
                 <input type="text" value="<?php $metabox->the_value(); ?>" id="<?php $metabox->the_name(); ?>" name="<?php $metabox->the_name(); ?>">
            </div>

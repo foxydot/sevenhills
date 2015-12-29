@@ -57,7 +57,7 @@ if (!class_exists('MSDTestimonialCPT')) {
 		        'labels' => $labels,
 		        'hierarchical' => false,
 		        'description' => 'Testimonial',
-		        'supports' => array( 'author' ,'genesis-cpt-archives-settings'),
+		        'supports' => array( 'title', 'author', 'thumbnail','genesis-cpt-archives-settings'),
 		        'taxonomies' => array(),
 		        'public' => true,
 		        'show_ui' => true,
@@ -144,35 +144,77 @@ if (!class_exists('MSDTestimonialCPT')) {
                 'rows' => 1,
                 'columns' => 1,
                 'link' => false,
+                'length' => false,
+                'slideshow' => false,
+                'terms' => false,
             ), $atts ) );
             global $testimonial_info;
             $args = array(
                 'post_type' => $this->cpt,
-                'orderby' => rand,
-                'posts_per_page' => $rows * $columns,
+                'orderby' => rand
             );
+            $args['posts_per_page'] = $slideshow?5:$rows * $columns;
+            $terms = $terms?explode(',',$terms):false;
+            if($terms){
+                $args['tax_query'] = array(
+                    array(
+                        'taxonomy' => 'testimonial_type',
+                        'field' => 'slug',
+                        'terms' => $terms
+                    ),
+                );
+            }
+            
             $testimonials = get_posts($args);
+            $testimonial_array = array();
             $ret = false;
             foreach($testimonials AS $testimonial){
                 $testimonial_info->the_meta($testimonial->ID);
+                $badge = has_term( 'law-enforcement', 'testimonial_type', $testimonial->ID )?' <i class="badge-icon"></i>':'';
                 $quote = apply_filters('the_content',$testimonial_info->get_the_value('quote'));
+                if($length){
+                    $quote = self::msd_trim_quote($quote,$length,get_the_permalink($testimonial->ID));
+                }
+                $thumbnail = has_post_thumbnail($testimonial->ID)?get_the_post_thumbnail($testimonial->ID,array(90,90)):'';
                 $name = $testimonial_info->get_the_value('attribution')!=''?'<span class="name">'.$testimonial_info->get_the_value('attribution').',</span> ':'';
                 $position = $testimonial_info->get_the_value('position')!=''?'<span class="position">'.$testimonial_info->get_the_value('position').',</span> ':'';
-                $company = $testimonial_info->get_the_value('company')!=''?'<span class="company">'.$testimonial_info->get_the_value('company').'</span> ':'';
-                $ret .= '<div class="col-md-'. 12/$columns .' col-sm-1 item-wrapper">
+                $organization = $testimonial_info->get_the_value('organization')!=''?'<span class="organization">'.$testimonial_info->get_the_value('organization').'</span> ':'';
+                $location = $testimonial_info->get_the_value('location')!=''?'<span class="location">'.$testimonial_info->get_the_value('location').'</span> ':'';
+                $bootstrap = $slideshow?'':'col-md-'. 12/$columns .' col-xs-12 ';
+                $testimonial_array[] .= '<div class="'.$bootstrap.'item-wrapper">
+                <div class="logo">'.$thumbnail.do_shortcode('[decoration]').'</div>
+                <div class="attribution">'.$name.$position.$organization.$location.$badge.'</div>
                 <div class="quote">'.$quote.'</div>
-                <div class="attribution">'.$name.$position.$company.'</div>
                 </div>';
+            }
+            if($slideshow){
+                $slides = '';
+                foreach($testimonial_array AS $k=>$t){
+                    $active = $k=='0'?' active':'';
+                    $slides .= '<div class="item'.$active.'">'.$t.'</div>';
+                }
+                $controls = '
+  <div class="control-wrapper">
+  <a class="left carousel-control" href="#testimonial-carousel" role="button" data-slide="prev">
+    <span class="fa fa-angle-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#testimonial-carousel" role="button" data-slide="next">
+    <span class="fa fa-angle-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a></div>';
+                $ret = sprintf('<div id="testimonial-carousel" class="carousel slide" data-ride="carousel">'.$controls.'<div class="carousel-inner" role="listbox">%s</div></div>',$slides);
+            } else {
+                $ret .= implode('',$testimonial_array);
             }
             if($link){
                 $link_text = is_string($link)?$link:'Read More Testimonials';
-                $ret .= '<div class="link-wrapper"><a href="'.get_post_type_archive_link($this->cpt).'">'.$link_text.'</a></div>';
+                $ret .= '<div class="col-md-'. 12/$columns .' col-xs-12 link-wrapper"><a href="'.get_post_type_archive_link($this->cpt).'">'.$link_text.'</a></div>';
             }
             $ret = '<div class="msdlab_testimonial_gallery">'.$ret.'</div>';
             
             return $ret;
         } 
-
         function add_metaboxes(){
                 global $post,$wpalchemy_media_access,$testimonial_info;
                 $testimonial_info = new WPAlchemy_MetaBox(array

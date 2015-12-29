@@ -1,6 +1,7 @@
 /* Import Fonts
 ------------------------------------------------------------ */
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
 /* Font Stacks */
 .customsansserif,
 .customsanserif {
@@ -78,6 +79,7 @@
 }
 .site-header .page-title-area .entry-title,
 .site-header .page-footer-area .entry-title {
+  margin-top: 4rem;
   padding-bottom: 0.2rem;
   margin-bottom: 0.2rem;
   width: auto;

@@ -5,6 +5,7 @@ HTML5 Reset
   normalize.css v2.1.2 | MIT License | git.io/normalize
 --------------------------------------------- */
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
 article,
 aside,
 details,
@@ -7045,6 +7046,55 @@ Site Footer
   font-weight: 700;
   text-transform: uppercase;
   font-size: 1.2vw;
+}
+.msdlab_testimonial_gallery .carousel-control {
+  background-image: none;
+  color: #31251C;
+  font-size: 5rem;
+  text-shadow: none;
+  width: 5%;
+  padding-top: 80px;
+}
+.msdlab_testimonial_gallery .carousel-inner {
+  background-image: url(../img/coffee-cups-background.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+.msdlab_testimonial_gallery .carousel-inner .item .logo img {
+  padding: 70px 0;
+}
+.msdlab_testimonial_gallery .carousel-inner .item .attribution {
+  font-size: 1.4rem;
+  color: #c96;
+}
+.msdlab_testimonial_gallery .carousel-inner .item .quote {
+  font-size: 1.4rem;
+  font-style: italic;
+  color: #999;
+  margin: 2em auto;
+  max-width: 800px;
+}
+.msdlab_testimonial_gallery .carousel-inner .item .quote p {
+  position: relative;
+}
+.msdlab_testimonial_gallery .carousel-inner .item .quote p.first-child:before,
+.msdlab_testimonial_gallery .carousel-inner .item .quote p.last-child:after {
+  font-size: 6em;
+  font-weight: 700;
+  color: rgba(49, 37, 28, 0.3);
+  display: inline;
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+}
+.msdlab_testimonial_gallery .carousel-inner .item .quote p.first-child:before {
+  content: '“';
+  top: -0.5em;
+  margin-left: -0.75em;
+}
+.msdlab_testimonial_gallery .carousel-inner .item .quote p.last-child:after {
+  content: '”';
+  bottom: -0.85em;
+  margin-right: -0.75em;
 }
 .scroll {
   color: #FFF;
