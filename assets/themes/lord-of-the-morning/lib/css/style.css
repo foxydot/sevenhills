@@ -6940,6 +6940,7 @@ Site Footer
   line-height: 1;
 }
 .sectioned-page-wrapper .section {
+  padding: 3rem 0;
   margin-bottom: 2rem;
   text-align: center;
 }
@@ -6962,7 +6963,7 @@ Site Footer
   height: 4.5rem;
   width: 4.5rem;
   display: block;
-  margin: 2rem auto 1.6rem;
+  margin: 0 auto 1.6rem;
 }
 .sectioned-page-wrapper .section .section-subtitle {
   font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
@@ -6973,6 +6974,12 @@ Site Footer
   font-weight: 800;
   line-height: 1.2;
   color: #197F3F;
+}
+@media only screen and (max-width: 1023px) {
+  .sectioned-page-wrapper .section {
+    padding: 3vw 0;
+    margin-bottom: 2vw;
+  }
 }
 .woocommerce #respond input#submit,
 .woocommerce a.button,

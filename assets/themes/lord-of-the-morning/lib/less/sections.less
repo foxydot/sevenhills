@@ -1,5 +1,6 @@
 .sectioned-page-wrapper{
   .section{
+    padding: 3rem 0;
     margin-bottom: 2rem;
     text-align: center;
   .section-title{
@@ -18,7 +19,7 @@
       height: 4.5rem;
       width: 4.5rem;
       display: block;
-      margin: 2rem auto 1.6rem;
+      margin: 0 auto 1.6rem;
     }
   }
   .section-subtitle {
@@ -32,6 +33,15 @@
         .section-content{
         }
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .sectioned-page-wrapper{
+    .section{
+      padding: 3vw 0;
+      margin-bottom: 2vw;
     }
   }
 }
