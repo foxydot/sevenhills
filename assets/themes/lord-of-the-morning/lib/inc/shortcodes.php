@@ -125,7 +125,8 @@ function msdlab_icon_shortcodes($atts){
 
 add_shortcode('decoration', 'msdlab_decoration');
 function msdlab_decoration($atts){
-    return '<div class="decoration"></div>';
+    //return '<div class="decoration"></div>';
+    return false;
 }
 add_shortcode('scroll', 'msdlab_scroll');
 function msdlab_scroll($atts,$content){
