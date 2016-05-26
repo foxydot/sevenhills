@@ -189,9 +189,11 @@ if (!class_exists('MSDTestimonialCPT')) {
             }
             if($slideshow){
                 $slides = '';
+                $indicator = array();
                 foreach($testimonial_array AS $k=>$t){
                     $active = $k=='0'?' active':'';
                     $slides .= '<div class="item'.$active.'">'.$t.'</div>';
+                    $indicators .= '<li class="'.$active.'" data-target="#testimonial-carousel" data-slide-to="'.$k.'"></li>';
                 }
                 $controls = '
   <div class="control-wrapper">
@@ -203,7 +205,11 @@ if (!class_exists('MSDTestimonialCPT')) {
     <span class="fa fa-angle-right" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a></div>';
-                $ret = sprintf('<div id="testimonial-carousel" class="carousel slide" data-ride="carousel">'.$controls.'<div class="carousel-inner" role="listbox">%s</div></div>',$slides);
+                $indicators = '<!-- Indicators -->
+  <ol class="carousel-indicators">
+    '.$indicators.'
+  </ol>';
+                $ret = sprintf('<div id="testimonial-carousel" class="carousel slide" data-ride="carousel">'.$indicators.'<div class="carousel-inner" role="listbox">%s</div>'.$controls.'</div>',$slides);
             } else {
                 $ret .= implode('',$testimonial_array);
             }
