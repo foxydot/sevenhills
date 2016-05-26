@@ -7054,6 +7054,18 @@ Site Footer
   text-transform: uppercase;
   font-size: 1.2vw;
 }
+.msdlab_testimonial_gallery .carousel-indicators {
+  bottom: -1em;
+  opacity: 0.4;
+}
+.msdlab_testimonial_gallery .carousel-indicators li {
+  list-style: circle outside none;
+  background-color: #FFF;
+  border: 1px solid #7A5F4C;
+}
+.msdlab_testimonial_gallery .carousel-indicators li.active {
+  background-color: #7A5F4C;
+}
 .msdlab_testimonial_gallery .carousel-control {
   background-image: none;
   color: #31251C;
@@ -7069,6 +7081,7 @@ Site Footer
 }
 .msdlab_testimonial_gallery .carousel-inner .item .logo img {
   padding: 70px 0;
+  border-radius: 50%;
 }
 .msdlab_testimonial_gallery .carousel-inner .item .attribution {
   font-size: 1.4rem;
