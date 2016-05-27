@@ -72,16 +72,19 @@ img#wpstats {
 
 /* MSD Social */
 
-.pre-header{
-  .clearfix;
-  .connected-social{
     .social-media{
-      float: right;
+      float: left;
       a.fa{
-        background: none;
-        color: @ltgrey;
+        background:transparent;
+        margin: 5px;
         height: auto;
-        line-height: inherit;
+        width: auto;
+        font-size: 2.8rem;
+        line-height: 1.6;
+        color: fade(@brown,30%);
+        &:before{
+          opacity: 1;
+        }
       }
       a.fa:hover{
         line-height:inherit;
@@ -136,6 +139,4 @@ img#wpstats {
        a.fa-rss:hover{
          color:@rss;
        }
-    }
-  }
 }

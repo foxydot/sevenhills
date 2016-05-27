@@ -5758,7 +5758,7 @@ input[type="week"],
 select,
 textarea {
   background-color: #f2efef;
-  border: 1px solid #FC7136;
+  border: 0px solid #CCC;
   color: #31251C;
   font-size: 14px;
   font-size: 1.4rem;
@@ -6134,85 +6134,71 @@ img#wpstats {
   color: #FC7136;
 }
 /* MSD Social */
-.pre-header:before,
-.pre-header:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
+.social-media {
+  float: left;
 }
-.pre-header:after {
-  clear: both;
-}
-.pre-header:before,
-.pre-header:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
-}
-.pre-header:after {
-  clear: both;
-}
-.pre-header .connected-social .social-media {
-  float: right;
-}
-.pre-header .connected-social .social-media a.fa {
-  background: none;
-  color: #CCC;
+.social-media a.fa {
+  background: transparent;
+  margin: 5px;
   height: auto;
-  line-height: inherit;
+  width: auto;
+  font-size: 2.8rem;
+  line-height: 1.6;
+  color: rgba(49, 37, 28, 0.3);
 }
-.pre-header .connected-social .social-media a.fa:hover {
+.social-media a.fa:before {
+  opacity: 1;
+}
+.social-media a.fa:hover {
   line-height: inherit;
   height: auto;
 }
-.pre-header .connected-social .social-media a.fa.last-child {
+.social-media a.fa.last-child {
   margin-right: 0;
 }
-.pre-header .connected-social .social-media a.fa-facebook:hover {
+.social-media a.fa-facebook:hover {
   color: #345AA1;
 }
-.pre-header .connected-social .social-media a.fa-twitter:hover {
+.social-media a.fa-twitter:hover {
   color: #348DB9;
 }
-.pre-header .connected-social .social-media a.fa-pinterest:hover {
+.social-media a.fa-pinterest:hover {
   color: #EC1A22;
 }
-.pre-header .connected-social .social-media a.fa-google-plus:hover {
+.social-media a.fa-google-plus:hover {
   color: #000000;
 }
-.pre-header .connected-social .social-media a.fa-linkedin:hover {
+.social-media a.fa-linkedin:hover {
   color: #66B5D3;
 }
-.pre-header .connected-social .social-media a.fa-instagram:hover {
+.social-media a.fa-instagram:hover {
   color: #EC1A22;
 }
-.pre-header .connected-social .social-media a.fa-tumblr:hover {
+.social-media a.fa-tumblr:hover {
   color: #3E5A70;
 }
-.pre-header .connected-social .social-media a.fa-reddit:hover {
+.social-media a.fa-reddit:hover {
   color: #FF4400;
 }
-.pre-header .connected-social .social-media a.fa-flickr:hover {
+.social-media a.fa-flickr:hover {
   color: #0062DD;
 }
-.pre-header .connected-social .social-media a.fa-youtube:hover {
+.social-media a.fa-youtube:hover {
   color: #CC181E;
 }
-.pre-header .connected-social .social-media a.fa-vimeo-square:hover {
+.social-media a.fa-vimeo-square:hover {
   color: #232021;
 }
-.pre-header .connected-social .social-media a.fa-vine:hover {
+.social-media a.fa-vine:hover {
   color: #00BE8F;
 }
-.pre-header .connected-social .social-media a.fa-share-alt:hover {
+.social-media a.fa-share-alt:hover {
   color: #00BF00;
 }
-.pre-header .connected-social .social-media a.fa-envelope:hover {
+.social-media a.fa-envelope:hover {
   color: #999999;
 }
-.pre-header .connected-social .social-media a.fa-rss:hover {
+.social-media a.fa-rss:hover {
   color: #F37D2A;
 }
 /*
@@ -7035,6 +7021,62 @@ Site Footer
   background: url(../img/bkg-about-page.jpg) no-repeat left center;
   background-size: cover;
 }
+.page.contact-us .sectioned-page-wrapper .section-infoform {
+  margin: 0;
+}
+.page.contact-us .sectioned-page-wrapper .section-infoform .section-content {
+  text-align: left;
+}
+.page.contact-us .sectioned-page-wrapper .section-infoform .section-content h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.page.contact-us .sectioned-page-wrapper .section-infoform .section-content address .msdsocial_street {
+  display: block;
+}
+.page.contact-us .sectioned-page-wrapper .section-infoform .section-content .gform_wrapper .gform_footer input.button,
+.page.contact-us .sectioned-page-wrapper .section-infoform .section-content .gform_wrapper .gform_footer input[type="submit"] {
+  padding: 6px 24px;
+  font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  font-size: 1.6rem;
+  line-height: 1.625;
+  color: #31251C;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: table;
+  margin: 12px auto;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid #31251C;
+}
+.page.contact-us .sectioned-page-wrapper .section-infoform .section-content .gform_wrapper .gform_footer input.button:hover,
+.page.contact-us .sectioned-page-wrapper .section-infoform .section-content .gform_wrapper .gform_footer input[type="submit"]:hover {
+  padding: 6px 24px;
+  font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  font-size: 1.6rem;
+  line-height: 1.625;
+  color: #197F3F;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: table;
+  margin: 12px auto;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid #197F3F;
+}
+.page.contact-us .sectioned-page-wrapper .section-resmap {
+  margin: 0;
+  padding: 0;
+}
+.page.contact-us .sectioned-page-wrapper .section-resmap .section-body .wrap {
+  max-width: 100%;
+}
 .coffee-button-wrapper {
   margin-top: 3vw;
 }
@@ -7135,6 +7177,11 @@ Site Footer
   background: url(../img/scroll-decoration.svg) no-repeat center center;
   min-height: 20px;
   min-width: 70px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .nav-primary li.logo a {
+    background-image: url(../img/logo2x.png);
+  }
 }
 /*
 Media Queries
