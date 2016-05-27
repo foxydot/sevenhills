@@ -26,6 +26,40 @@
     }
   }
 }
+.page.contact-us{
+  .sectioned-page-wrapper{
+    .section-infoform{
+      margin:0;
+      .section-content{
+        text-align: left;
+        h3{
+          font-size: 2rem;
+          text-transform: uppercase;
+        }
+        address{
+          .msdsocial_street{
+            display: block;
+          }
+        }
+        .gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type="submit"]{
+          .button(@white,@brown);
+          &:hover{
+            .button(@white,@green);
+          }
+        }
+      }
+    }
+    .section-resmap{
+      margin: 0;
+      padding: 0;
+      .section-body{
+        .wrap{
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
 
 .coffee-button-wrapper{
   margin-top: 3vw;
@@ -136,4 +170,17 @@
   background: url(../img/scroll-decoration.svg) no-repeat center center;
   min-height: 20px;
   min-width: 70px;
+}
+
+//retina logo
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  .nav-primary li.logo a{
+    background-image: url(../img/logo2x.png);
+  }
 }
