@@ -80,9 +80,12 @@ function columnConform() {
 
 
 jQuery(window).resize(function($) {
- columnConform();
+    if(window.innerWidth > 768){
+        columnConform();
+    }
 });
 
 jQuery(document).ready(function($) {
- columnConform();
-});
+    if(window.innerWidth > 768){
+        columnConform();
+    }});
