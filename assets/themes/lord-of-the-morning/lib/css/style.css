@@ -7178,6 +7178,21 @@ Site Footer
   min-height: 20px;
   min-width: 70px;
 }
+.page.coffee .entry-content .col-md-6 {
+  text-align: center;
+  padding: 1em inherit;
+  margin: 1em 0;
+}
+.page.coffee .entry-content .col-md-6:before {
+  border-top: 1px solid #e3e2e0;
+  content: "";
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  width: 80%;
+}
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .nav-primary li.logo a {
     background-image: url(../img/logo2x.png);
