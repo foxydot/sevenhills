@@ -6425,12 +6425,15 @@ Site Navigation
   margin: 0;
   float: none;
   display: block;
-  padding: .5em 0;
+  padding: .3em 0;
 }
 .nav-primary .menu > li .sub-menu li a {
   background-color: rgba(255, 255, 255, 0);
   border: 0;
   padding: .5em 0;
+}
+.nav-primary .menu > li .sub-menu li a span {
+  line-height: 1.2;
 }
 .nav-primary .menu > li .sub-menu li a:hover {
   color: #FFF;
@@ -7184,7 +7187,7 @@ Site Footer
   margin: 1em 0;
 }
 .page.coffee .entry-content .col-md-6:before {
-  border-top: 1px solid #e3e2e0;
+  border-top: 1px solid #f2efef;
   content: "";
   display: block;
   margin-left: auto;
@@ -7197,6 +7200,23 @@ Site Footer
   display: block;
   float: none;
   clear: both;
+  border-top: 1px solid #f2efef;
+}
+.nav-primary li.coffee .sub-menu {
+  width: 50vw;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 2px #197F3F;
+}
+.nav-primary li.coffee .sub-menu li.menu-item {
+  width: 18%;
+  float: left;
+  margin: 0.2em 1%;
+}
+.nav-primary li.coffee .sub-menu li.menu-item a {
+  color: #197F3F;
+}
+.nav-primary li.coffee .sub-menu li.menu-item a:hover {
+  border-color: #197F3F;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .nav-primary li.logo a {
