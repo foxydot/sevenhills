@@ -7193,6 +7193,11 @@ Site Footer
   padding-bottom: 40px;
   width: 80%;
 }
+.page.coffee .entry-content h3 {
+  display: block;
+  float: none;
+  clear: both;
+}
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .nav-primary li.logo a {
     background-image: url(../img/logo2x.png);
