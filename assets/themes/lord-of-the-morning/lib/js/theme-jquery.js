@@ -51,7 +51,7 @@ function getOriginalHeight(el) {
 function columnConform() {
 
  // find the tallest DIV in the row, and set the heights of all of the DIVs to match it.
- jQuery('.page.coffee .col-md-6, .nav-primary li.coffee .sub-menu li.menu-item').each(function(index) {
+ jQuery('.page.coffee .col-md-6').each(function(index) {
 
   if(currentRowStart != jQuery(this).position().top) {
 
@@ -80,12 +80,17 @@ function columnConform() {
 
 
 jQuery(window).resize(function($) {
+    $('.entry-content').imagesLoaded( function() {
     if(window.innerWidth > 768){
         columnConform();
     }
+    });
 });
 
 jQuery(document).ready(function($) {
+    $('.entry-content').imagesLoaded( function() {
     if(window.innerWidth > 768){
         columnConform();
-    }});
+    }
+    });
+});
