@@ -173,18 +173,24 @@
 }
 //coffee page
 .page.coffee{
+  .site-inner{
+    .background-image(linear-gradient(to right, @ltblue 0%, @white 10%, @white 90%,@ltblue 100%));
+    .wrap{
+      background: @white;
+    }
+  }
   .entry-content{
     .col-md-6{
       text-align: center;
       padding: 1em inherit;
       margin: 1em 0;
+      position: relative;
       &:before{
         border-top: 1px solid @offwhite;
         content: "";
         display: block;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 40px;
         padding-bottom: 40px;
         width: 80%;
       }
@@ -194,6 +200,10 @@
       float: none;
       clear: both;
       border-top: 1px solid @offwhite;
+      padding: 3em 0 0;
+      margin: 0;
+      color: @green;
+      .clearfix;
     }
   }
 }
