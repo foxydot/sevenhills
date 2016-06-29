@@ -7185,13 +7185,17 @@ Site Footer
   padding-left: 60px;
   padding-right: 60px;
 }
-.page.coffee .entry-content .col-md-6 {
+.page.coffee .entry-content .col-md-6,
+.page.coffee .entry-content .col-md-4,
+.page.coffee .entry-content .col-md-3 {
   text-align: center;
   padding: 1em inherit;
   margin: 1em 0;
   position: relative;
 }
-.page.coffee .entry-content .col-md-6:before {
+.page.coffee .entry-content .col-md-6:before,
+.page.coffee .entry-content .col-md-4:before,
+.page.coffee .entry-content .col-md-3:before {
   border-top: 1px solid #f2efef;
   content: "";
   display: block;
