@@ -51,7 +51,7 @@ function getOriginalHeight(el) {
 function columnConform() {
 
  // find the tallest DIV in the row, and set the heights of all of the DIVs to match it.
- jQuery('.page.coffee .col-md-6').each(function(index) {
+ jQuery('.page.coffee .col-md-6,.page.coffee .col-md-4,.page.coffee .col-md-3').each(function(index) {
 
   if(currentRowStart != jQuery(this).position().top) {
 
