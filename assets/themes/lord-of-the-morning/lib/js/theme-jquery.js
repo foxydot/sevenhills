@@ -82,7 +82,7 @@ function columnConform() {
 
 
 jQuery(window).resize(function($) {
-    $('.entry-content').imagesLoaded( function() {
+    jQuery('.entry-content').imagesLoaded( function() {
     if(window.innerWidth > 768){
         columnConform();
     }
@@ -90,7 +90,7 @@ jQuery(window).resize(function($) {
 });
 
 jQuery(document).ready(function($) {
-    $('.entry-content').imagesLoaded( function() {
+    jQuery('.entry-content').imagesLoaded( function() {
     if(window.innerWidth > 768){
         columnConform();
     }
