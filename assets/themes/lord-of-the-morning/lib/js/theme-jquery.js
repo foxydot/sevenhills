@@ -31,6 +31,7 @@ jQuery(document).ready(function($) {
 	        $(this).html('LESS <i class="fa fa-angle-up"></i>');
 	    }
 	});
+	$('.page.coffee .col-md-6 img,.page.coffee .col-md-4 img,.page.coffee .col-md-3 img').wrap('<div class="imgwrap"></div>');
 });
 
 var currentTallest = 0;
@@ -51,7 +52,8 @@ function getOriginalHeight(el) {
 function columnConform() {
 
  // find the tallest DIV in the row, and set the heights of all of the DIVs to match it.
- jQuery('.page.coffee .col-md-6,.page.coffee .col-md-4,.page.coffee .col-md-3').each(function(index) {
+ var theElements = '.page.coffee .col-md-6,.page.coffee .col-md-4,.page.coffee .col-md-3';
+ jQuery(theElements).each(function(index) {
 
   if(currentRowStart != jQuery(this).position().top) {
 
