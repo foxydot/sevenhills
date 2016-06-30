@@ -6201,6 +6201,13 @@ img#wpstats {
 .social-media a.fa-rss:hover {
   color: #F37D2A;
 }
+/**TABLEPRESS**/
+.site-container .tablepress .odd td,
+.site-container .tablepress .even td {
+  background: transparent;
+  border: 0;
+  text-align: center;
+}
 /*
 Site Header
 ---------------------------------------------------------------------------------------------------- */
