@@ -5554,15 +5554,15 @@ td.visible-print {
   font-size: 24px;
   font-size: 1.6rem;
   line-height: 1.625;
-  color: #FFF;
+  color: #197F3F;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   display: table;
   margin: 12px auto;
   text-decoration: none;
-  background-color: rgba(255, 255, 255, 0);
-  border: 2px solid #FFF;
+  background-color: rgba(25, 127, 63, 0);
+  border: 2px solid #197F3F;
   -webkit-transition: all 0.1s ease-in-out;
   -moz-transition: all 0.1s ease-in-out;
   -ms-transition: all 0.1s ease-in-out;
@@ -5577,16 +5577,16 @@ td.visible-print {
   font-size: 24px;
   font-size: 1.6rem;
   line-height: 1.625;
-  color: #FFF;
+  color: #082a15;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   display: table;
   margin: 12px auto;
   text-decoration: none;
-  background-color: rgba(255, 255, 255, 0);
-  border: 2px solid #FFF;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(25, 127, 63, 0);
+  border: 2px solid #082a15;
+  background-color: rgba(25, 127, 63, 0.4);
 }
 /* Arrows */
 /* Clears */
@@ -6382,6 +6382,9 @@ Site Navigation
 .nav-primary {
   position: relative;
 }
+.nav-primary .genesis-nav-menu {
+  line-height: 1.3;
+}
 .nav-primary li {
   width: 12.5%;
   margin-top: 150px;
@@ -6430,7 +6433,7 @@ Site Navigation
 .nav-primary .menu > li .sub-menu li a {
   background-color: rgba(255, 255, 255, 0);
   border: 0;
-  padding: .5em 0;
+  padding: .5em 0 0;
 }
 .nav-primary .menu > li .sub-menu li a span {
   line-height: 1.2;
@@ -6980,15 +6983,15 @@ Site Footer
   font-size: 24px;
   font-size: 1.6rem;
   line-height: 1.625;
-  color: #FFF;
+  color: #197F3F;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   display: table;
   margin: 12px auto;
   text-decoration: none;
-  background-color: rgba(255, 255, 255, 0);
-  border: 2px solid #FFF;
+  background-color: rgba(25, 127, 63, 0);
+  border: 2px solid #197F3F;
   -webkit-transition: all 0.1s ease-in-out;
   -moz-transition: all 0.1s ease-in-out;
   -ms-transition: all 0.1s ease-in-out;
@@ -7021,7 +7024,7 @@ Site Footer
   padding: 4rem 0;
 }
 .page.about-us .site-inner {
-  background: url(../img/bkg-about-page.jpg) no-repeat left center;
+  background: url(../img/bkg-about-page.jpg) no-repeat top center;
   background-size: cover;
 }
 .page.contact-us .sectioned-page-wrapper .section-infoform {
@@ -7232,23 +7235,6 @@ Site Footer
 }
 .page.coffee .entry-content h3:after {
   clear: both;
-}
-.page.coffee .entry-content .button {
-  padding: 6px 24px;
-  font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
-  font-weight: 300;
-  font-size: 24px;
-  font-size: 1.6rem;
-  line-height: 1.625;
-  color: #FFF;
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-  display: table;
-  margin: 12px auto;
-  text-decoration: none;
-  background-color: rgba(25, 127, 63, 0);
-  border: 2px solid #FFF;
 }
 .nav-primary li.coffee .sub-menu {
   width: 50vw;

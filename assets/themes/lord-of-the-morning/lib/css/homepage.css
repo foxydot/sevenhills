@@ -24,15 +24,15 @@
   font-size: 24px;
   font-size: 1.6rem;
   line-height: 1.625;
-  color: #FFF;
+  color: #197F3F;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   display: table;
   margin: 12px auto;
   text-decoration: none;
-  background-color: rgba(255, 255, 255, 0);
-  border: 2px solid #FFF;
+  background-color: rgba(25, 127, 63, 0);
+  border: 2px solid #197F3F;
 }
 .button:hover,
 .button a:hover {
@@ -42,16 +42,16 @@
   font-size: 24px;
   font-size: 1.6rem;
   line-height: 1.625;
-  color: #FFF;
+  color: #082a15;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   display: table;
   margin: 12px auto;
   text-decoration: none;
-  background-color: rgba(255, 255, 255, 0);
-  border: 2px solid #FFF;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(25, 127, 63, 0);
+  border: 2px solid #082a15;
+  background-color: rgba(25, 127, 63, 0.4);
 }
 /* Arrows */
 /* Clears */
@@ -91,6 +91,43 @@
   content: '';
   margin: 0;
   height: 0;
+}
+.site-header .page-title-area .intro-text .button,
+.site-header .page-footer-area .intro-text .button {
+  padding: 6px 24px;
+  font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  font-size: 1.6rem;
+  line-height: 1.625;
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: table;
+  margin: 12px auto;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid #FFF;
+}
+.site-header .page-title-area .intro-text .button:hover,
+.site-header .page-footer-area .intro-text .button:hover {
+  padding: 6px 24px;
+  font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  font-size: 1.6rem;
+  line-height: 1.625;
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: table;
+  margin: 12px auto;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid #FFF;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 .sectioned-page-wrapper .section {
   margin: 0;
