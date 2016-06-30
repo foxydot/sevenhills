@@ -7214,6 +7214,11 @@ Site Footer
   padding-bottom: 40px;
   width: 80%;
 }
+.page.coffee .entry-content .col-md-6 .imgwrap,
+.page.coffee .entry-content .col-md-4 .imgwrap,
+.page.coffee .entry-content .col-md-3 .imgwrap {
+  min-height: 65%;
+}
 .page.coffee .entry-content h3 {
   display: block;
   float: none;
