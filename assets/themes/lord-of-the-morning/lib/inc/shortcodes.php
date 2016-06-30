@@ -146,3 +146,7 @@ function msdlab_scroll($atts,$content){
     $ret .= '<div id="scroll-to-'.$target.'" class="scroll '.$style.'">'.apply_filters('the_content', $content).'</div>';
     return $ret;
 }
+add_shortcode('empty','msdlab_make_empty_note');
+function msdlab_make_empty_note(){
+    return false;
+}
