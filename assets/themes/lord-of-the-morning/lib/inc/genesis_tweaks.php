@@ -54,7 +54,7 @@ add_filter('genesis_breadcrumb_args', 'msdlab_breadcrumb_args'); //customize the
 remove_action('genesis_before_loop', 'genesis_do_breadcrumbs'); //move the breadcrumbs 
 add_filter( 'genesis_post_info', 'sp_post_info_filter' );
 add_action('template_redirect','msdlab_maybe_move_title');
-add_action('template_redirect','msdlab_blog_header');
+//add_action('template_redirect','msdlab_blog_header');
 
     //remove_action('genesis_entry_header','genesis_do_post_title'); //move the title out of the content area
     //add_action('msdlab_title_area','genesis_do_post_title');
