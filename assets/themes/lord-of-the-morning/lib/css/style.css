@@ -5791,7 +5791,7 @@ table {
   width: 100%;
 }
 tbody {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 0 solid #ddd;
 }
 th,
 td {
@@ -5802,7 +5802,7 @@ th {
   text-transform: uppercase;
 }
 td {
-  border-top: 1px solid #ddd;
+  border-top: 0 solid #ddd;
   padding: 6px 0;
   padding: 0.6rem 0;
 }
