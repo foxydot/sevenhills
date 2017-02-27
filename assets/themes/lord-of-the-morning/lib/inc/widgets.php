@@ -11,7 +11,7 @@ class KohlerConnected extends MSDConnected {
         $text = apply_filters( 'widget_text', empty( $instance['text'] ) ? '' : $instance['text'], $instance );
         echo $before_widget;
         if ( !empty( $title ) ) { print $before_title.$title.$after_title; } 
-        if ( !empty( $text )){ print '<div class="connected-text">'.$text.'</div>'; }
+        
         if(($address||$phone||$tollfree||$fax||$email||$social)&&$form_id > 0){
             print '<div class="col-md-9">';
         }
@@ -91,7 +91,7 @@ class KohlerConnected extends MSDConnected {
         if(($address||$phone||$tollfree||$fax||$email||$social)&&$form_id > 0){
             print '</div>';
         }
-        
+        if ( !empty( $text )){ print '<div class="connected-text">'.$text.'</div>'; }
         echo $after_widget;
     }
 }
