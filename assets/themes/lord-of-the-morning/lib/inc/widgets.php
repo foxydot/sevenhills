@@ -91,8 +91,9 @@ class KohlerConnected extends MSDConnected {
         if(($address||$phone||$tollfree||$fax||$email||$social)&&$form_id > 0){
             print '</div>';
         }
-        if ( !empty( $text )){ print '<div class="connected-text">'.$text.'</div>'; }
+        
         echo $after_widget;
+        if ( !empty( $text )){ print '<div class="connected-text">'.$text.'</div>'; }
     }
 }
 
