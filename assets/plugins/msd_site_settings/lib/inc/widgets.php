@@ -17,7 +17,7 @@ class MSDConnected extends WP_Widget {
 		$text = apply_filters( 'widget_text', empty( $instance['text'] ) ? '' : $instance['text'], $instance );
 		echo $before_widget;
 		if ( !empty( $title ) ) { print $before_title.$title.$after_title; } 
-        
+        if ( !empty( $text )){ print '<div class="connected-text">'.$text.'</div>'; }
         if ( $form_id > 0 ){
             print '<div class="connected-form">';
             print do_shortcode('[gravityform id="'.$form_id.'" title="true" description="true" ajax="true" tabindex=1000]');
@@ -86,7 +86,6 @@ class MSDConnected extends WP_Widget {
             $social = do_shortcode('[msd-social]');
             if( $social ){ print '<div class="connected-social">'.$social.'</div>'; }
         }	
-        if ( !empty( $text )){ print '<div class="connected-text">'.$text.'</div>'; }
 		echo $after_widget;
 	}
 
