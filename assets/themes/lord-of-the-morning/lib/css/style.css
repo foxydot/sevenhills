@@ -7010,6 +7010,9 @@ Site Footer
   text-align: center;
   min-height: 3.5em;
 }
+.woocommerce .products .product span.price {
+  text-align: center;
+}
 .woocommerce #respond input#submit.alt,
 .woocommerce a.button.alt,
 .woocommerce button.button.alt,
