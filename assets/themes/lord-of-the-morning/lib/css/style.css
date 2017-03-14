@@ -7019,6 +7019,12 @@ Site Footer
 .woocommerce input.button.alt {
   background-color: #197F3F;
 }
+.woocommerce #respond input#submit.alt:hover,
+.woocommerce a.button.alt:hover,
+.woocommerce button.button.alt:hover,
+.woocommerce input.button.alt:hover {
+  background-color: #11542a;
+}
 .woocommerce #respond input#submit.alt.disabled,
 .woocommerce #respond input#submit.alt.disabled:hover,
 .woocommerce #respond input#submit.alt:disabled,
