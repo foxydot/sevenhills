@@ -80,3 +80,16 @@ if (  ! function_exists( 'woocommerce_template_loop_category_title' ) ) {
         <?php
     }
 }
+    
+remove_action('woocommerce_single_product_summary','woocommerce_template_single_title',5);
+add_action('woocommerce_single_product_summary','the_content',20);
+remove_action('woocommerce_single_product_summary','woocommerce_template_single_meta',40);
+
+/**
+ * Remove existing tabs from single product pages.
+ */
+function remove_woocommerce_product_tabs( $tabs ) {
+    unset( $tabs['description'] );
+    return $tabs;
+}
+add_filter( 'woocommerce_product_tabs', 'remove_woocommerce_product_tabs', 98 );
