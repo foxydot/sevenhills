@@ -36,4 +36,16 @@ if(!function_exists('requireDir')){
         unset($dh, $dir, $file, $requiredFile);
     }
 }
+
 requireDir(get_stylesheet_directory() . '/lib/inc');
+
+add_filter( 'woocommerce_product_add_to_cart_text' , 'custom_woocommerce_product_add_to_cart_text' );
+function custom_woocommerce_product_add_to_cart_text() {
+    global $product;    
+    $product_type = $product->product_type;  
+    switch ( $product_type ) {
+case 'variable':
+            return __( 'Choose a Grind Option', 'woocommerce' );
+        break;
+}
+} 
