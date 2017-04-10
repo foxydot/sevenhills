@@ -2,7 +2,7 @@
 /*
 Plugin Name: MSD Site Settings
 Description: Provides settings panel for several social/address options and widgets/shortcodes/functions for display.
-Version: 0.9.5
+Version: 0.9.9
 Author: Catherine M OBrien Sandrick (CMOS)
 Author URI: http://msdlab.com/biological-assets/catherine-obrien-sandrick/
 GitHub Plugin URI: https://github.com/msdlab/msd_site_settings
@@ -20,25 +20,25 @@ if ( is_admin() ) {
 
 
 class MSDSocial{
-	private $the_path;
-	private $the_url;
-	public $icon_size;
+    private $the_path;
+    private $the_url;
+    public $icon_size;
     private $ver;
-	function MSDSocial(){$this->__construct();}
+    function MSDSocial(){$this->__construct();}
     function __construct(){
-		$this->the_path = plugin_dir_path(__FILE__);
-		$this->the_url = plugin_dir_url(__FILE__);
-		$this->icon_size = get_option('msdsocial_icon_size')?get_option('msdsocial_icon_size'):'0';
-        $this->ver = '0.9.5';
-		/*
-		 * Pull in some stuff from other files
-		 */
-		//$this->requireDir($this->the_path . 'lib/inc');
+        $this->the_path = plugin_dir_path(__FILE__);
+        $this->the_url = plugin_dir_url(__FILE__);
+        $this->icon_size = get_option('msdsocial_icon_size')?get_option('msdsocial_icon_size'):'0';
+        $this->ver = '0.9.6';
+        /*
+         * Pull in some stuff from other files
+         */
+        //$this->requireDir($this->the_path . 'lib/inc');
         require_once($this->the_path . 'lib/inc/settings.php');
         require_once($this->the_path . 'lib/inc/widgets.php');
         if(!is_admin()){
-    		wp_enqueue_style('msd-social-style',$this->the_url.'lib/css/style.css');
-    		wp_enqueue_style('msd-social-style-'.$this->icon_size,$this->the_url.'lib/css/style'.$this->icon_size.'.css');
+            wp_enqueue_style('msd-social-style',$this->the_url.'lib/css/style.css');
+            wp_enqueue_style('msd-social-style-'.$this->icon_size,$this->the_url.'lib/css/style'.$this->icon_size.'.css');
             wp_enqueue_style('font-awesome-style','//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css');
         }
         add_action('admin_enqueue_scripts', array(&$this,'add_admin_scripts') );
@@ -48,12 +48,13 @@ class MSDSocial{
         
         add_shortcode('msd-address',array(&$this,'get_address'));
         add_shortcode('msd-additional-locations',array(&$this,'get_additional_locations'));
-		add_shortcode('msd-bizname',array(&$this,'get_bizname'));
-		add_shortcode('msd-copyright',array(&$this,'get_copyright'));
-		add_shortcode('msd-digits',array(&$this,'get_digits'));
+        add_shortcode('msd-all-locations',array(&$this,'get_all_locations'));
+        add_shortcode('msd-bizname',array(&$this,'get_bizname'));
+        add_shortcode('msd-copyright',array(&$this,'get_copyright'));
+        add_shortcode('msd-digits',array(&$this,'get_digits'));
         add_shortcode('msd-social',array(&$this,'social_media'));
         add_shortcode('msd-hours',array(&$this,'get_hours'));
-	}
+    }
 
         function add_admin_scripts() {
             global $current_screen;
@@ -81,22 +82,22 @@ class MSDSocial{
 
 //contact information
 function get_bizname(){
-	$ret .= (get_option('msdsocial_biz_name')!='')?get_option('msdsocial_biz_name'):get_bloginfo('name');
-	return $ret;
+    $ret .= (get_option('msdsocial_biz_name')!='')?stripslashes(get_option('msdsocial_biz_name')):stripslashes(get_bloginfo('name'));
+    return $ret;
 }
 function get_address(){
-	if((get_option('msdsocial_street')!='') || (get_option('msdsocial_city')!='') || (get_option('msdsocial_state')!='') || (get_option('msdsocial_zip')!='')) {
-		$ret = '<address itemscope itemtype="http://schema.org/LocalBusiness">';
-			$ret .= (get_option('msdsocial_street')!='')?'<span itemprop="streetAddress" class="msdsocial_street">'.get_option('msdsocial_street').'</span> ':'';
-			$ret .= (get_option('msdsocial_street2')!='')?'<span itemprop="streetAddress" class="msdsocial_street_2">'.get_option('msdsocial_street2').'</span> ':'';
-			$ret .= (get_option('msdsocial_city')!='')?'<span itemprop="addressLocality" class="msdsocial_city">'.get_option('msdsocial_city').'</span>, ':'';
-			$ret .= (get_option('msdsocial_state')!='')?'<span itemprop="addressRegion" class="msdsocial_state">'.get_option('msdsocial_state').'</span> ':'';
-			$ret .= (get_option('msdsocial_zip')!='')?'<span itemprop="postalCode" class="msdsocial_zip">'.get_option('msdsocial_zip').'</span> ':'';
-		$ret .= '</address>';
-		  return $ret;
-		} else {
-			return false;
-		} 
+    if((get_option('msdsocial_street')!='') || (get_option('msdsocial_city')!='') || (get_option('msdsocial_state')!='') || (get_option('msdsocial_zip')!='')) {
+        $ret = '<address itemscope itemtype="http://schema.org/LocalBusiness">';
+            $ret .= (get_option('msdsocial_street')!='')?'<span itemprop="streetAddress" class="msdsocial_street">'.get_option('msdsocial_street').'</span> ':'';
+            $ret .= (get_option('msdsocial_street2')!='')?'<span itemprop="streetAddress" class="msdsocial_street_2">'.get_option('msdsocial_street2').'</span> ':'';
+            $ret .= (get_option('msdsocial_city')!='')?'<span itemprop="addressLocality" class="msdsocial_city">'.get_option('msdsocial_city').'</span>, ':'';
+            $ret .= (get_option('msdsocial_state')!='')?'<span itemprop="addressRegion" class="msdsocial_state">'.get_option('msdsocial_state').'</span> ':'';
+            $ret .= (get_option('msdsocial_zip')!='')?'<span itemprop="postalCode" class="msdsocial_zip">'.get_option('msdsocial_zip').'</span> ':'';
+        $ret .= '</address>';
+          return $ret;
+        } else {
+            return false;
+        } 
 }
 function get_additional_locations(){
     $additional_locations = get_option(msdsocial_adtl_locations);
@@ -116,24 +117,61 @@ function get_additional_locations(){
     }
     return $ret;
 }
+function get_all_locations(){
+    $primary_location = array(
+        array(
+            'location_name' => $this->get_bizname(),
+            'street' => get_option('msdsocial_street'),
+            'street2' => get_option('msdsocial_street2'),
+            'city' => get_option('msdsocial_city'),
+            'state' => get_option('msdsocial_state'),
+            'zip' => get_option('msdsocial_zip'),
+            'phone' => get_option('msdsocial_phone'),
+            'tracking_phone' => get_option('msdsocial_tracking_phone'),
+            'fax' => get_option('msdsocial_fax'),
+            'email' => get_option('msdsocial_email'),
+            'lat' => get_option('msdsocial_lat'),
+            'lng' => get_option('msdsocial_lng'),
+        )
+    );
+    $additional_locations = get_option(msdsocial_adtl_locations);
+    $locations = array_merge($primary_location,$additional_locations);
+    $ret = '';
+    foreach($locations AS $loc){
+        if(($loc[street]!='') || ($loc[city]!='') || ($loc[state]!='') || ($loc[zip]!='') || ($loc[phone]!='')) {
+            $ret .= '<li>
+            <address itemscope itemtype="http://schema.org/LocalBusiness">';
+                $ret .= ($loc[location_name]!='')?'<span itemprop="name" class="msdsocial_location_name">'.$loc[location_name].'</span> ':'';
+                $ret .= ($loc[street]!='')?'<span itemprop="streetAddress" class="msdsocial_street">'.$loc[street].'</span> ':'';
+                $ret .= ($loc[street2]!='')?'<span itemprop="streetAddress" class="msdsocial_street_2">'.$loc[street2].'</span> ':'';
+                $ret .= ($loc[city]!='')?'<span itemprop="addressLocality" class="msdsocial_city">'.$loc[city].'</span>, ':'';
+                $ret .= ($loc[state]!='')?'<span itemprop="addressRegion" class="msdsocial_state">'.$loc[state].'</span> ':'';
+                $ret .= ($loc[zip]!='')?'<span itemprop="postalCode" class="msdsocial_zip">'.$loc[zip].'</span> ':'';
+                $ret .= $this->get_location_digits($loc,FALSE,'');
+            $ret .= '</address>
+            </li>';
+        }
+    }
+    return '<ul class="all-locations">'.$ret.'</ul>';
+}
 
 function get_digits($dowrap = TRUE,$sep = " | "){
         $sepsize = count($sep);
-		if((get_option('msdsocial_phone')!='') || (get_option('msdsocial_tollfree')!='') || (get_option('msdsocial_fax')!='')) {
-		    if((get_option('msdsocial_tracking_phone')!='')){
-		        if(wp_is_mobile()){
-		          $phone .= '<span itemprop="telephone" class="msdsocial_phone"><a href="tel:+1'.get_option('msdsocial_tracking_phone').'">'.get_option('msdsocial_tracking_phone').'</a></span> ';
-		        } else {
-		          $phone .= '<span itemprop="telephone" class="msdsocial_phone">'.get_option('msdsocial_tracking_phone').'</span> ';
-		        }
-		      $phone .= '<span  itemprop="telephone" class="msdsocial_phone" style="display: none;">'.get_option('msdsocial_phone').'</span> ';
-		    } else {
-		        if(wp_is_mobile()){
-		          $phone .= (get_option('msdsocial_phone')!='')?'<span itemprop="telephone" class="msdsocial_phone"><a href="tel:+1'.get_option('msdsocial_phone').'" itemprop="telephone">'.get_option('msdsocial_phone').'</a></span> ':'';
-		        } else {
+        if((get_option('msdsocial_phone')!='') || (get_option('msdsocial_tollfree')!='') || (get_option('msdsocial_fax')!='')) {
+            if((get_option('msdsocial_tracking_phone')!='')){
+                if(wp_is_mobile()){
+                  $phone .= '<span itemprop="telephone" class="msdsocial_phone"><a href="tel:+1'.get_option('msdsocial_tracking_phone').'">'.get_option('msdsocial_tracking_phone').'</a></span> ';
+                } else {
+                  $phone .= '<span itemprop="telephone" class="msdsocial_phone">'.get_option('msdsocial_tracking_phone').'</span> ';
+                }
+              $phone .= '<span  itemprop="telephone" class="msdsocial_phone" style="display: none;">'.get_option('msdsocial_phone').'</span> ';
+            } else {
+                if(wp_is_mobile()){
+                  $phone .= (get_option('msdsocial_phone')!='')?'<span itemprop="telephone" class="msdsocial_phone"><a href="tel:+1'.get_option('msdsocial_phone').'" itemprop="telephone">'.get_option('msdsocial_phone').'</a></span> ':'';
+                } else {
                   $phone .= (get_option('msdsocial_phone')!='')?'<span itemprop="telephone" class="msdsocial_phone">'.get_option('msdsocial_phone').'</span> ':'';
-		        }
-		    }
+                }
+            }
             if((get_option('msdsocial_tracking_tollfree')!='')){
                 if(wp_is_mobile()){
                   $tollfree .= '<span itemprop="telephone" class="msdsocial_tollfree"><a href="tel:+1'.get_option('msdsocial_tracking_tollfree').'">'.get_option('msdsocial_tracking_tollfree').'</a></span> ';
@@ -154,11 +192,11 @@ function get_digits($dowrap = TRUE,$sep = " | "){
             $ret .= $tollfree;
             $ret .= (!strpos($ret,$sep,$sepsize))?$sep:'';
             $ret .= $fax;
- 		  if($dowrap){$ret = '<address itemscope itemtype="http://schema.org/LocalBusiness">'.$ret.'</address>';}
-		return $ret;
-		} else {
-			return false;
-		} 
+          if($dowrap){$ret = '<address itemscope itemtype="http://schema.org/LocalBusiness">'.$ret.'</address>';}
+        return $ret;
+        } else {
+            return false;
+        } 
 }
 
 function get_location_digits($loc,$dowrap = TRUE,$sep = " | "){
@@ -196,7 +234,7 @@ function get_location_digits($loc,$dowrap = TRUE,$sep = " | "){
             $ret = $phone;
             $ret .= ($phone!='' && $tollfree!='')?$sep:'';
             $ret .= $tollfree;
-            $ret .= (!strpos($ret,$sep,$sepsize))?$sep:'';
+            $ret .= (!strpos($ret,$sep,$sepsize))?$sep:''; //TODO:Why error here?
             $ret .= $fax;
           if($dowrap){$ret = '<address itemscope itemtype="http://schema.org/LocalBusiness">'.$ret.'</address>';}
         return $ret;
@@ -296,13 +334,13 @@ function get_hours($atts = array()){
 }
 //create copyright message
 function copyright($address = TRUE){
-	if($address){
-		$ret .= $this->msdsocial_get_address();
-		$ret .= $this->msdsocial_get_digits();
-	}
-	$ret .= 'Copyright &copy;'.date('Y').' ';
-	$ret .= $this->msdsocial_get_bizname();
-	print $ret;
+    if($address){
+        $ret .= $this->msdsocial_get_address();
+        $ret .= $this->msdsocial_get_digits();
+    }
+    $ret .= 'Copyright &copy;'.date('Y').' ';
+    $ret .= $this->msdsocial_get_bizname();
+    print $ret;
 }
 
 
@@ -469,6 +507,10 @@ function setup_notification_bar(){
                 }
                 break;
             case 50:
+                global $notification_bar_html;
+                $notification_bar_html = $this->get_notification_bar();
+                return true;
+                break;
             default:
                 return false;
                 break;
@@ -477,30 +519,33 @@ function setup_notification_bar(){
 }
 
 function print_notification_bar(){
-    $content = apply_filters('the_content',get_option('msdsocial_notification_content'));
-    print '<div class="notification-bar"><div class="wrap">' . $content . '</div></div>';
+    print $this->get_notification_bar();
+}
+function get_notification_bar(){
+    $content = apply_filters('the_content',stripcslashes(get_option('msdsocial_notification_content')));
+    return '<div class="notification-bar"><div class="wrap">' . $content . '</div></div>';
 }
 
 function requireDir($dir){
-	$dh = @opendir($dir);
+    $dh = @opendir($dir);
 
-	if (!$dh) {
-		throw new Exception("Cannot open directory $dir");
-	} else {
-		while (($file = readdir($dh)) !== false) {
-			if ($file != '.' && $file != '..') {
-				$requiredFile = $dir . DIRECTORY_SEPARATOR . $file;
-				if ('.php' === substr($file, strlen($file) - 4)) {
-					require_once $requiredFile;
-				} elseif (is_dir($requiredFile)) {
-					requireDir($requiredFile);
-				}
-			}
-		}
-	closedir($dh);
-	}
-	unset($dh, $dir, $file, $requiredFile);
+    if (!$dh) {
+        throw new Exception("Cannot open directory $dir");
+    } else {
+        while (($file = readdir($dh)) !== false) {
+            if ($file != '.' && $file != '..') {
+                $requiredFile = $dir . DIRECTORY_SEPARATOR . $file;
+                if ('.php' === substr($file, strlen($file) - 4)) {
+                    require_once $requiredFile;
+                } elseif (is_dir($requiredFile)) {
+                    requireDir($requiredFile);
+                }
+            }
+        }
+    closedir($dh);
+    }
+    unset($dh, $dir, $file, $requiredFile);
 }
-	//end of class
+    //end of class
 }
 $msd_social = new MSDSocial();

@@ -3,7 +3,7 @@
     $notification_inputs['content'] = '<li>
                   <label for="notification_content">Content</label>
                   <div class="input">
-                    <textarea name="notification_content" id="notification_content" class="regular-text" rows="5">' . get_option('msdsocial_notification_content') . '</textarea>
+                    <textarea name="notification_content" id="notification_content" class="regular-text" rows="5">' . stripcslashes(get_option('msdsocial_notification_content')) . '</textarea>
                   </div>
               </li>';
     $position_check = array(
