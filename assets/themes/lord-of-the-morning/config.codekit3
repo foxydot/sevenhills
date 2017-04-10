@@ -7,7 +7,7 @@
 		"uuidString": "1A01970C-EACA-42D1-9331-99BC1236ECDB"
 		}
 	],
-"creatorBuild": "25568",
+"creatorBuild": "25813",
 "files": {
 	"\/front-page.php": {
 		"ft": 8192,
@@ -1291,7 +1291,10 @@
 		"oA": 0,
 		"oAP": "\/lib\/img\/apple-touch-icon-114x114.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/lib\/img\/apple-touch-icon-120x120.png": {
 		"ft": 32768,
@@ -1299,7 +1302,10 @@
 		"oA": 0,
 		"oAP": "\/lib\/img\/apple-touch-icon-120x120.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/lib\/img\/apple-touch-icon-144x144.png": {
 		"ft": 32768,
@@ -1307,7 +1313,10 @@
 		"oA": 0,
 		"oAP": "\/lib\/img\/apple-touch-icon-144x144.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/lib\/img\/apple-touch-icon-152x152.png": {
 		"ft": 32768,
@@ -1315,7 +1324,10 @@
 		"oA": 0,
 		"oAP": "\/lib\/img\/apple-touch-icon-152x152.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/lib\/img\/apple-touch-icon-180x180.png": {
 		"ft": 32768,
@@ -1323,7 +1335,10 @@
 		"oA": 0,
 		"oAP": "\/lib\/img\/apple-touch-icon-180x180.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/lib\/img\/apple-touch-icon-57x57.png": {
 		"ft": 32768,
@@ -1331,7 +1346,10 @@
 		"oA": 0,
 		"oAP": "\/lib\/img\/apple-touch-icon-57x57.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/lib\/img\/apple-touch-icon-72x72.png": {
 		"ft": 32768,
@@ -1339,7 +1357,10 @@
 		"oA": 0,
 		"oAP": "\/lib\/img\/apple-touch-icon-72x72.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/lib\/img\/apple-touch-icon-76x76.png": {
 		"ft": 32768,
@@ -1347,7 +1368,10 @@
 		"oA": 0,
 		"oAP": "\/lib\/img\/apple-touch-icon-76x76.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/lib\/img\/apple-touch-icon.png": {
 		"ft": 32768,
@@ -1355,7 +1379,10 @@
 		"oA": 0,
 		"oAP": "\/lib\/img\/apple-touch-icon.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/lib\/img\/bean.png": {
 		"ft": 32768,
@@ -1363,7 +1390,10 @@
 		"oA": 0,
 		"oAP": "\/lib\/img\/bean.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/lib\/img\/bkg-about-page.jpg": {
 		"ft": 16384,
@@ -1371,7 +1401,9 @@
 		"oA": 0,
 		"oAP": "\/lib\/img\/bkg-about-page.jpg",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/lib\/img\/bkg-ftr.png": {
 		"ft": 32768,
@@ -1379,7 +1411,10 @@
 		"oA": 0,
 		"oAP": "\/lib\/img\/bkg-ftr.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/lib\/img\/bkg-hdr.jpg": {
 		"ft": 16384,
@@ -1387,7 +1422,9 @@
 		"oA": 0,
 		"oAP": "\/lib\/img\/bkg-hdr.jpg",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/lib\/img\/bkg-hdr.png": {
 		"ft": 32768,
@@ -1395,7 +1432,10 @@
 		"oA": 0,
 		"oAP": "\/lib\/img\/bkg-hdr.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/lib\/img\/bkg-search.png": {
 		"ft": 32768,
@@ -1403,7 +1443,10 @@
 		"oA": 0,
 		"oAP": "\/lib\/img\/bkg-search.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/lib\/img\/bkg-shadow-dn.png": {
 		"ft": 32768,
@@ -1411,7 +1454,10 @@
 		"oA": 0,
 		"oAP": "\/lib\/img\/bkg-shadow-dn.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/lib\/img\/blockquote.png": {
 		"ft": 32768,
@@ -1419,7 +1465,10 @@
 		"oA": 0,
 		"oAP": "\/lib\/img\/blockquote.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/lib\/img\/coffee-cups-background.png": {
 		"ft": 32768,
@@ -1427,7 +1476,10 @@
 		"oA": 0,
 		"oAP": "\/lib\/img\/coffee-cups-background.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/lib\/img\/cup.svg": {
 		"ft": 2097152,
@@ -1451,7 +1503,9 @@
 		"oA": 0,
 		"oAP": "\/lib\/img\/footer.jpg",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/lib\/img\/glyphicons-halflings-white.png": {
 		"ft": 32768,
@@ -1459,7 +1513,10 @@
 		"oA": 0,
 		"oAP": "\/lib\/img\/glyphicons-halflings-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/lib\/img\/glyphicons-halflings.png": {
 		"ft": 32768,
@@ -1467,7 +1524,10 @@
 		"oA": 0,
 		"oAP": "\/lib\/img\/glyphicons-halflings.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/lib\/img\/gradient.png": {
 		"ft": 32768,
@@ -1475,7 +1535,10 @@
 		"oA": 0,
 		"oAP": "\/lib\/img\/gradient.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/lib\/img\/icon-dot.png": {
 		"ft": 32768,
@@ -1483,7 +1546,10 @@
 		"oA": 0,
 		"oAP": "\/lib\/img\/icon-dot.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/lib\/img\/icon-plus-white.png": {
 		"ft": 32768,
@@ -1491,7 +1557,10 @@
 		"oA": 0,
 		"oAP": "\/lib\/img\/icon-plus-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/lib\/img\/icon-plus.png": {
 		"ft": 32768,
@@ -1499,7 +1568,10 @@
 		"oA": 0,
 		"oAP": "\/lib\/img\/icon-plus.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/lib\/img\/logo.gif": {
 		"ft": 4194304,
@@ -1515,7 +1587,10 @@
 		"oA": 0,
 		"oAP": "\/lib\/img\/logo.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/lib\/img\/logo2x.png": {
 		"ft": 32768,
@@ -1523,7 +1598,10 @@
 		"oA": 0,
 		"oAP": "\/lib\/img\/logo2x.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/lib\/img\/mobile_button.png": {
 		"ft": 32768,
@@ -1531,7 +1609,10 @@
 		"oA": 0,
 		"oAP": "\/lib\/img\/mobile_button.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/lib\/img\/plus.png": {
 		"ft": 32768,
@@ -1539,7 +1620,10 @@
 		"oA": 0,
 		"oAP": "\/lib\/img\/plus.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/lib\/img\/responsivebg.png": {
 		"ft": 32768,
@@ -1547,7 +1631,10 @@
 		"oA": 0,
 		"oAP": "\/lib\/img\/responsivebg.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/lib\/img\/rss.png": {
 		"ft": 32768,
@@ -1555,7 +1642,10 @@
 		"oA": 0,
 		"oAP": "\/lib\/img\/rss.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/lib\/img\/scroll-decoration.svg": {
 		"ft": 2097152,
@@ -1583,7 +1673,10 @@
 		"oA": 0,
 		"oAP": "\/lib\/img\/testimonial-layer-1.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/lib\/img\/testimonial-layer-2.png": {
 		"ft": 32768,
@@ -1591,7 +1684,10 @@
 		"oA": 0,
 		"oAP": "\/lib\/img\/testimonial-layer-2.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/lib\/img\/testimonial-layer-3.png": {
 		"ft": 32768,
@@ -1599,7 +1695,10 @@
 		"oA": 0,
 		"oAP": "\/lib\/img\/testimonial-layer-3.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/lib\/img\/testimonial-layer-4.png": {
 		"ft": 32768,
@@ -1607,7 +1706,10 @@
 		"oA": 0,
 		"oAP": "\/lib\/img\/testimonial-layer-4.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/lib\/img\/twitter-nav.png": {
 		"ft": 32768,
@@ -1615,7 +1717,10 @@
 		"oA": 0,
 		"oAP": "\/lib\/img\/twitter-nav.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/lib\/inc\/devel.php": {
 		"ft": 8192,
@@ -2637,7 +2742,10 @@
 		"oA": 0,
 		"oAP": "\/screenshot.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/style.css": {
 		"aP": 1,
@@ -3330,6 +3438,10 @@
 			"active": 1,
 			"optionString": ""
 			},
+		"no-compare-neg-zero": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-cond-assign": {
 			"active": 1,
 			"optionString": "'except-parens'"
@@ -3614,6 +3726,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-prototype-builtins": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-redeclare": {
 			"active": 1,
 			"optionString": "{'builtinGlobals': false}"
@@ -3809,6 +3925,10 @@
 		"no-with": {
 			"active": 0,
 			"optionString": ""
+			},
+		"nonblock-statement-body-position": {
+			"active": 0,
+			"optionString": "'beside'"
 			},
 		"object-curly-newline": {
 			"active": 0,
@@ -4409,7 +4529,8 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"quality": 100
 		},
 	"languageDefaultsJS": {
 		"autoOutputAction": 0,
@@ -4432,14 +4553,6 @@
 		"autoOutputPathStyle": 0,
 		"orderOutput": 0,
 		"outputStyle": 1
-		},
-	"languageDefaultsJSX": {
-		"autoOutputAction": 0,
-		"autoOutputPathFilenamePattern": "*.js",
-		"autoOutputPathRelativePath": "",
-		"autoOutputPathReplace1": "jsx",
-		"autoOutputPathReplace2": "js",
-		"autoOutputPathStyle": 0
 		},
 	"languageDefaultsKIT": {
 		"autoOutputAction": 0,
@@ -4502,7 +4615,9 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"optimizerType": 1,
+		"quality": 100
 		},
 	"languageDefaultsPUG": {
 		"autoOutputAction": 0,
