@@ -95,19 +95,45 @@ function remove_woocommerce_product_tabs( $tabs ) {
 add_filter( 'woocommerce_product_tabs', 'remove_woocommerce_product_tabs', 98 );
 
 add_filter( 'woocommerce_product_add_to_cart_text' , 'custom_woocommerce_product_add_to_cart_text' );
-function custom_woocommerce_product_add_to_cart_text() {
+function custom_woocommerce_product_add_to_cart_text($var) {
     global $product;    
+    $cat_ids = $product->category_ids;
     $product_type = $product->product_type;  
     switch ( $product_type ) {
     case 'variable':
+                if(msdlab_is_coffee($cat_ids)){
                 return __( 'Choose a Grind Option', 'woocommerce' );
+                } else {
+                    return $var;
+                }
             break;
+    default:
+        return $var;
+        break;
     }
 } 
 
+function msdlab_is_coffee($cat_ids){
+    if(!is_array($cat_ids)){
+        $id = $cat_ids;
+        $cat_ids = array();
+        $cat_ids[] = $id;
+    }
+    for($i=9;$i<=13;$i++){
+        if(in_array($i, $cat_ids)){
+            return true;
+        }
+    }
+    return false;
+}
+
 add_filter('woocommerce_dropdown_variation_attribute_options_html','msdlab_woocommerce_dropdown_variation_attribute_options_html',10,2);
 function msdlab_woocommerce_dropdown_variation_attribute_options_html($html,$args){
-    $html = str_replace('Choose an option', 'Choose a Grind Option', $html);
+    global $product;    
+    $cat_ids = $product->category_ids;
+    if(msdlab_is_coffee($cat_ids)){
+        $html = str_replace('Choose an option', 'Choose a Grind Option', $html);
+    }
     return $html;
 }
 
