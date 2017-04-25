@@ -7004,12 +7004,34 @@ Site Footer
   transition: all 0.1s ease-in-out;
   border-radius: 0;
 }
-.woocommerce .products .product h3 {
+.woocommerce ul.products,
+.woocommerce-page ul.products {
+  margin: 0 auto;
+}
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product {
+  width: 31%;
+  margin: 1.75% 1.75%;
+}
+.woocommerce ul.products li.product h3,
+.woocommerce-page ul.products li.product h3 {
   text-align: center;
   min-height: 3.5em;
 }
-.woocommerce .products .product span.price {
+.woocommerce ul.products li.product span.price,
+.woocommerce-page ul.products li.product span.price {
   text-align: center;
+}
+.woocommerce ul.products li.product.first,
+.woocommerce-page ul.products li.product.first {
+  margin-left: 0;
+}
+.woocommerce ul.products li.product.last,
+.woocommerce-page ul.products li.product.last {
+  margin-right: 0;
+}
+.post-type-archive-product ul.products li.product h3 {
+  display: none;
 }
 .woocommerce #respond input#submit.alt,
 .woocommerce a.button.alt,
@@ -7048,13 +7070,6 @@ Site Footer
 .woocommerce input.button.alt[disabled]:disabled,
 .woocommerce input.button.alt[disabled]:disabled:hover {
   background-color: #3f5949;
-}
-.woocommerce ul.products li.product,
-.woocommerce-page ul.products li.product {
-  width: 23.05%;
-}
-.woocommerce-page ul.products li.first {
-  clear: none;
 }
 .page-title-area,
 .page-footer-area {

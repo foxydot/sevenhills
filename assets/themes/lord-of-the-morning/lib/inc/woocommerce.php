@@ -104,3 +104,10 @@ function custom_woocommerce_product_add_to_cart_text() {
             break;
     }
 } 
+// Change number or products per row to 3
+add_filter('loop_shop_columns', 'msdlab_loop_columns');
+if (!function_exists('msdlab_loop_columns')) {
+    function msdlab_loop_columns() {
+        return 3; // 3 products per row
+    }
+}
