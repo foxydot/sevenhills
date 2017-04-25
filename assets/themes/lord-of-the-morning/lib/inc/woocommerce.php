@@ -104,6 +104,13 @@ function custom_woocommerce_product_add_to_cart_text() {
             break;
     }
 } 
+
+add_filter('woocommerce_dropdown_variation_attribute_options_html','msdlab_woocommerce_dropdown_variation_attribute_options_html',10,2);
+function msdlab_woocommerce_dropdown_variation_attribute_options_html($html,$args){
+    $html = str_replace('Choose an option', 'Choose a Grind Option', $html);
+    return $html;
+}
+
 // Change number or products per row to 3
 add_filter('loop_shop_columns', 'msdlab_loop_columns');
 if (!function_exists('msdlab_loop_columns')) {
