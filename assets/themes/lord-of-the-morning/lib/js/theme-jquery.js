@@ -32,6 +32,18 @@ jQuery(document).ready(function($) {
 	    }
 	});
 	$('.page.coffee .col-md-6 img,.page.coffee .col-md-4 img,.page.coffee .col-md-3 img').wrap('<div class="imgwrap"></div>');
+	$('.pre-header .widget-area .widget_nav_menu .nav-button').each(function(){
+	        var iconstr;
+	        if($(this).hasClass('account-button')){
+                iconstr = 'user';
+            } else if($(this).hasClass('cart-button')){
+                iconstr = 'shopping-cart';
+            } else if($(this).hasClass('contact-button')){
+                iconstr = 'envelope';
+            } 
+            $(this).find('a').wrapInner('<i class="fa fa-'+iconstr+'"><span class="screen-reader-text"></span></i>');
+	});
+	
 });
 
 var currentTallest = 0;

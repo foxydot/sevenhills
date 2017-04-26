@@ -1,9 +1,8 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
 /* Import Fonts
 ------------------------------------------------------------ */
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
 /* Font Stacks */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp2\/htdocs\/sevenhills\/assets\/themes\/lord-of-the-morning\/lib\/less\/mixins\.less}line{font-family:\0000329}}
 .customsansserif,
 .customsanserif {
   font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
@@ -12,14 +11,12 @@
   font-size: 1.6rem;
   line-height: 1.625;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp2\/htdocs\/sevenhills\/assets\/themes\/lord-of-the-morning\/lib\/less\/mixins\.less}line{font-family:\0000333}}
 .fontawesome {
   font-family: "FontAwesome";
 }
 /* Colors */
 /* Neutrals */
 /* Buttons */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp2\/htdocs\/sevenhills\/assets\/themes\/lord-of-the-morning\/lib\/less\/mixins\.less}line{font-family:\00003105}}
 .button {
   padding: 6px 24px;
   font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
@@ -27,7 +24,7 @@
   font-size: 24px;
   font-size: 1.6rem;
   line-height: 1.625;
-  color: #197f3f;
+  color: #197F3F;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
@@ -35,9 +32,8 @@
   margin: 12px auto;
   text-decoration: none;
   background-color: rgba(25, 127, 63, 0);
-  border: 2px solid #197f3f;
+  border: 2px solid #197F3F;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp2\/htdocs\/sevenhills\/assets\/themes\/lord-of-the-morning\/lib\/less\/mixins\.less}line{font-family:\00003114}}
 .button:hover,
 .button a:hover {
   padding: 6px 24px;
@@ -59,7 +55,6 @@
 }
 /* Arrows */
 /* Clears */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp2\/htdocs\/sevenhills\/assets\/themes\/lord-of-the-morning\/lib\/less\/mixins\.less}line{font-family:\00003229}}
 .msd-clearfix {
   content: ".";
   display: block;
@@ -67,25 +62,30 @@
   clear: both;
   visibility: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp2\/htdocs\/sevenhills\/assets\/themes\/lord-of-the-morning\/lib\/less\/homepage\.less}line{font-family:\000034}}
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px);
+  position: absolute !important;
+  white-space: nowrap;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
 .site-inner {
   display: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp2\/htdocs\/sevenhills\/assets\/themes\/lord-of-the-morning\/lib\/less\/homepage\.less}line{font-family:\000038}}
 .site-header .page-title-area,
 .site-header .page-footer-area {
   clear: both;
   float: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp2\/htdocs\/sevenhills\/assets\/themes\/lord-of-the-morning\/lib\/less\/homepage\.less}line{font-family:\0000311}}
 .site-header .page-title-area .entry-title,
 .site-header .page-footer-area .entry-title,
 .site-header .page-title-area .entry-subtitle,
 .site-header .page-footer-area .entry-subtitle {
-  color: #ffffff;
+  color: #FFF;
   line-height: 1.2;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp2\/htdocs\/sevenhills\/assets\/themes\/lord-of-the-morning\/lib\/less\/homepage\.less}line{font-family:\0000315}}
 .site-header .page-title-area .entry-title,
 .site-header .page-footer-area .entry-title {
   margin-top: 2rem;
@@ -95,14 +95,12 @@
   display: inline-block;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp2\/htdocs\/sevenhills\/assets\/themes\/lord-of-the-morning\/lib\/less\/homepage\.less}line{font-family:\0000322}}
 .site-header .page-title-area .entry-title:before,
 .site-header .page-footer-area .entry-title:before {
   content: '';
   margin: 0;
   height: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp2\/htdocs\/sevenhills\/assets\/themes\/lord-of-the-morning\/lib\/less\/homepage\.less}line{font-family:\0000329}}
 .site-header .page-title-area .intro-text .button,
 .site-header .page-footer-area .intro-text .button {
   padding: 6px 24px;
@@ -111,7 +109,7 @@
   font-size: 24px;
   font-size: 1.6rem;
   line-height: 1.625;
-  color: #ffffff;
+  color: #FFF;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
@@ -119,9 +117,8 @@
   margin: 12px auto;
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0);
-  border: 2px solid #ffffff;
+  border: 2px solid #FFF;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp2\/htdocs\/sevenhills\/assets\/themes\/lord-of-the-morning\/lib\/less\/homepage\.less}line{font-family:\0000331}}
 .site-header .page-title-area .intro-text .button:hover,
 .site-header .page-footer-area .intro-text .button:hover {
   padding: 6px 24px;
@@ -130,7 +127,7 @@
   font-size: 24px;
   font-size: 1.6rem;
   line-height: 1.625;
-  color: #ffffff;
+  color: #FFF;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
@@ -138,43 +135,36 @@
   margin: 12px auto;
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0);
-  border: 2px solid #ffffff;
+  border: 2px solid #FFF;
   background-color: rgba(255, 255, 255, 0.4);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp2\/htdocs\/sevenhills\/assets\/themes\/lord-of-the-morning\/lib\/less\/homepage\.less}line{font-family:\0000340}}
 .sectioned-page-wrapper .section {
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp2\/htdocs\/sevenhills\/assets\/themes\/lord-of-the-morning\/lib\/less\/homepage\.less}line{font-family:\0000342}}
 .sectioned-page-wrapper .section iframe {
   min-width: 60vw;
   min-height: 33.33vw;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp2\/htdocs\/sevenhills\/assets\/themes\/lord-of-the-morning\/lib\/less\/homepage\.less}line{font-family:\0000346}}
 .sectioned-page-wrapper .section.section-training {
   background-repeat: no-repeat;
-  background-color: #666666;
+  background-color: #666;
   background-size: cover;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp2\/htdocs\/sevenhills\/assets\/themes\/lord-of-the-morning\/lib\/less\/homepage\.less}line{font-family:\0000351}}
 .sectioned-page-wrapper .section.section-training .section-body p {
-  color: #ffffff;
+  color: #FFF;
   font-size: 2.4rem;
   width: 80%;
   margin: 0 auto;
   text-shadow: 0 0 4px #333;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp2\/htdocs\/sevenhills\/assets\/themes\/lord-of-the-morning\/lib\/less\/homepage\.less}line{font-family:\0000358}}
 .sectioned-page-wrapper .section.section-training .section-body .coffee-button-wrapper {
   -webkit-filter: saturate(0) brightness(100);
   filter: saturate(0) brightness(100);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp2\/htdocs\/sevenhills\/assets\/themes\/lord-of-the-morning\/lib\/less\/homepage\.less}line{font-family:\0000364}}
 .sectioned-page-wrapper .section.section-testimonials {
   position: relative;
   min-height: 40vw;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp2\/htdocs\/sevenhills\/assets\/themes\/lord-of-the-morning\/lib\/less\/homepage\.less}line{font-family:\0000367}}
 .sectioned-page-wrapper .section.section-testimonials .parallax {
   background-repeat: no-repeat;
   position: absolute;
@@ -184,20 +174,15 @@
   height: 100%;
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp2\/htdocs\/sevenhills\/assets\/themes\/lord-of-the-morning\/lib\/less\/homepage\.less}line{font-family:\0000376}}
 .sectioned-page-wrapper .section.section-testimonials .level1 {
   background-image: url(../img/testimonial-layer-1.png);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp2\/htdocs\/sevenhills\/assets\/themes\/lord-of-the-morning\/lib\/less\/homepage\.less}line{font-family:\0000379}}
 .sectioned-page-wrapper .section.section-testimonials .level2 {
   background-image: url(../img/testimonial-layer-2.png);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp2\/htdocs\/sevenhills\/assets\/themes\/lord-of-the-morning\/lib\/less\/homepage\.less}line{font-family:\0000382}}
 .sectioned-page-wrapper .section.section-testimonials .level3 {
   background-image: url(../img/testimonial-layer-3.png);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp2\/htdocs\/sevenhills\/assets\/themes\/lord-of-the-morning\/lib\/less\/homepage\.less}line{font-family:\0000385}}
 .sectioned-page-wrapper .section.section-testimonials .level4 {
   background-image: url(../img/testimonial-layer-4.png);
 }
-/*# sourceMappingURL=homepage.css.map */

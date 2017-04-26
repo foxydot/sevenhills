@@ -5597,6 +5597,15 @@ td.visible-print {
   clear: both;
   visibility: hidden;
 }
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px);
+  position: absolute !important;
+  white-space: nowrap;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
 .container {
   max-width: none;
 }
@@ -6211,6 +6220,43 @@ img#wpstats {
   background: transparent;
   border: 0;
   text-align: center;
+}
+/*
+Pre-Header
+---------------------------------------------------------------------------------------------------- */
+.pre-header {
+  background: #31251C;
+  color: #FFF;
+}
+.pre-header .wrap .widget-area {
+  width: 100%;
+  text-align: right;
+}
+.pre-header .wrap .widget-area .widget {
+  display: inline-block;
+}
+.pre-header .wrap .widget-area .widget_nav_menu {
+  color: #FFF;
+}
+.pre-header .wrap .widget-area .widget_nav_menu .menu-item {
+  display: block;
+  float: left;
+}
+.pre-header .wrap .widget-area .widget_nav_menu .menu-item:hover {
+  position: static;
+}
+.pre-header .wrap .widget-area .widget_nav_menu .menu-item a {
+  border: none;
+  color: #FFF;
+  display: block;
+  padding: 0.1em 0.5em;
+  position: relative;
+}
+.pre-header .wrap .widget-area .widget_nav_menu .menu-item a:hover,
+.pre-header .wrap .widget-area .widget_nav_menu .menu-item .current-menu-item > a,
+.pre-header .wrap .widget-area .widget_nav_menu .menu-item .sub-menu .current-menu-item > a:hover {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
 }
 /*
 Site Header

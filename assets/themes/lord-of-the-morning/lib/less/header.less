@@ -1,4 +1,47 @@
 /*
+Pre-Header
+---------------------------------------------------------------------------------------------------- */
+.pre-header{
+  background: @brown;
+  color: @white;
+  .wrap{
+    .widget-area{
+      width: 100%;
+      text-align: right;
+      .widget{
+        display: inline-block;
+      }
+      .widget_nav_menu {
+        color: @white;
+        .menu-item {
+          display: block;
+          float: left;
+          &:hover{
+            position: static;
+          }
+          a {
+            border: none;
+            color: @white;
+            display: block;
+            padding: 0.1em 0.5em;
+            position: relative;
+          }
+          a:hover,.current-menu-item > a,.sub-menu .current-menu-item > a:hover {
+            color: fade(@white,60%);
+            text-decoration: none;
+          }
+          &.cart-button,&.account-button,&.contact-button{ //needs a little javascript. replace text with icon and screen reader text tag.
+            a{
+              
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*
 Site Header
 ---------------------------------------------------------------------------------------------------- */
 
