@@ -94,7 +94,7 @@ function remove_woocommerce_product_tabs( $tabs ) {
 }
 add_filter( 'woocommerce_product_tabs', 'remove_woocommerce_product_tabs', 98 );
 
-add_filter( 'woocommerce_product_add_to_cart_text' , 'custom_woocommerce_product_add_to_cart_text' );
+//add_filter( 'woocommerce_product_add_to_cart_text' , 'custom_woocommerce_product_add_to_cart_text' );
 function custom_woocommerce_product_add_to_cart_text($var) {
     global $product;    
     $cat_ids = $product->category_ids;

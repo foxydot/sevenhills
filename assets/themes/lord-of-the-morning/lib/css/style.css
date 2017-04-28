@@ -7062,8 +7062,8 @@ Site Footer
 }
 .woocommerce ul.products li.product,
 .woocommerce-page ul.products li.product {
-  width: 31%;
-  margin: 1.75% 1.75%;
+  width: 26%;
+  margin: 2.25% 2.25%;
 }
 .woocommerce ul.products li.product h2,
 .woocommerce-page ul.products li.product h2,
@@ -7078,11 +7078,11 @@ Site Footer
 }
 .woocommerce ul.products li.product.first,
 .woocommerce-page ul.products li.product.first {
-  margin-left: 0;
+  margin-left: 6.5%;
 }
 .woocommerce ul.products li.product.last,
 .woocommerce-page ul.products li.product.last {
-  margin-right: 0;
+  margin-right: 6.5%;
 }
 .woocommerce .single_add_to_cart_button,
 .woocommerce-page .single_add_to_cart_button {
