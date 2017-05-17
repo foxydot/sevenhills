@@ -40,10 +40,16 @@ jQuery(document).ready(function($) {
                 iconstr = 'shopping-cart';
             } else if($(this).hasClass('contact-button')){
                 iconstr = 'envelope';
-            } 
-            $(this).find('a').wrapInner('<i class="fa fa-'+iconstr+'"><span class="screen-reader-text"></span></i>');
-	});
-	
+            }
+            var anchor = $(this).find('a');
+            var title = anchor.html();
+            anchor.attr('data-toggle','tooltip')
+                .attr('data-placement','bottom')
+                .attr('title',title)
+                .wrapInner('<i class="fa fa-'+iconstr+'"><span class="screen-reader-text"></span></i>')
+                .tooltip();
+    });
+
 });
 
 var currentTallest = 0;
