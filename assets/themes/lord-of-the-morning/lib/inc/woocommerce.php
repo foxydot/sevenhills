@@ -129,9 +129,9 @@ function msdlab_is_coffee($cat_ids){
 
 add_filter('woocommerce_dropdown_variation_attribute_options_html','msdlab_woocommerce_dropdown_variation_attribute_options_html',10,2);
 function msdlab_woocommerce_dropdown_variation_attribute_options_html($html,$args){
-    global $product;    
+    global $product;
     $cat_ids = $product->category_ids;
-    if(msdlab_is_coffee($cat_ids)){
+    if($args['attribute'] == 'pa_grind'){
         $html = str_replace('Choose an option', 'Choose a Grind Option', $html);
     }
     return $html;
