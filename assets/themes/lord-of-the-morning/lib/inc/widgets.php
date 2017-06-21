@@ -40,6 +40,7 @@ class KohlerConnected extends MSDConnected {
             }
             $address = do_shortcode('[msd-address]'); 
             if ( $address ){
+                $address = preg_replace('@<\/address>@i','<span itemprop="addressCountry">USA</span></address>',$address);
                 print '<div class="connected-address">'.$address.'</div>';
             }
         }
