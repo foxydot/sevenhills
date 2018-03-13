@@ -7155,7 +7155,7 @@ Site Footer
   padding: 4rem 0;
 }
 .page.about-us .site-inner {
-  background: url() #CCC no-repeat top center;
+  background: #CCC no-repeat top center;
   background-size: cover;
 }
 .page.contact-us .sectioned-page-wrapper .section-infoform {

@@ -144,3 +144,38 @@ if (!function_exists('msdlab_loop_columns')) {
         return 3; // 3 products per row
     }
 }
+
+add_filter('woocommerce_package_rates', 'wf_hide_shipping_method_based_on_shipping_class', 10, 2);
+function wf_hide_shipping_method_based_on_shipping_class($available_shipping_methods, $package)
+{
+    $hide_when_shipping_class_exist = array(
+        39 => array(
+            'fedex:SMART_POST'
+        )
+    );
+
+    $hide_when_shipping_class_not_exist = array(
+    );
+
+    //error_log(json_encode($available_shipping_methods));
+    $shipping_class_in_cart = array();
+    foreach(WC()->cart->get_cart_contents() as $key => $values) {
+        $shipping_class_in_cart[] = $values['data']->get_shipping_class_id();
+    }
+
+    foreach($hide_when_shipping_class_exist as $class_id => $methods) {
+        if(in_array($class_id, $shipping_class_in_cart)){
+            foreach($methods as & $current_method) {
+                unset($available_shipping_methods[$current_method]);
+            }
+        }
+    }
+    foreach($hide_when_shipping_class_not_exist as $class_id => $methods) {
+        if(!in_array($class_id, $shipping_class_in_cart)){
+            foreach($methods as & $current_method) {
+                unset($available_shipping_methods[$current_method]);
+            }
+        }
+    }
+    return $available_shipping_methods;
+}
