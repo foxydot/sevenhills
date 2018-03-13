@@ -2,7 +2,7 @@
 /*
 Plugin Name: MSD Site Settings
 Description: Provides settings panel for several social/address options and widgets/shortcodes/functions for display.
-Version: 0.9.9
+Version: 1.0
 Author: Catherine M OBrien Sandrick (CMOS)
 Author URI: http://msdlab.com/biological-assets/catherine-obrien-sandrick/
 GitHub Plugin URI: https://github.com/msdlab/msd_site_settings
@@ -29,7 +29,7 @@ class MSDSocial{
         $this->the_path = plugin_dir_path(__FILE__);
         $this->the_url = plugin_dir_url(__FILE__);
         $this->icon_size = get_option('msdsocial_icon_size')?get_option('msdsocial_icon_size'):'0';
-        $this->ver = '0.9.6';
+        $this->ver = '1.0';
         /*
          * Pull in some stuff from other files
          */
@@ -190,7 +190,7 @@ function get_digits($dowrap = TRUE,$sep = " | "){
             $ret = $phone;
             $ret .= ($phone!='' && $tollfree!='')?$sep:'';
             $ret .= $tollfree;
-            $ret .= (!strpos($ret,$sep,$sepsize))?$sep:'';
+            $ret .= (!stripos($ret,$sep,$sepsize))?$sep:'';
             $ret .= $fax;
           if($dowrap){$ret = '<address itemscope itemtype="http://schema.org/LocalBusiness">'.$ret.'</address>';}
         return $ret;
@@ -234,7 +234,7 @@ function get_location_digits($loc,$dowrap = TRUE,$sep = " | "){
             $ret = $phone;
             $ret .= ($phone!='' && $tollfree!='')?$sep:'';
             $ret .= $tollfree;
-            $ret .= (!strpos($ret,$sep,$sepsize))?$sep:''; //TODO:Why error here?
+            $ret .= (!stripos($ret,$sep,$sepsize))?$sep:''; //TODO:Why error here?
             $ret .= $fax;
           if($dowrap){$ret = '<address itemscope itemtype="http://schema.org/LocalBusiness">'.$ret.'</address>';}
         return $ret;

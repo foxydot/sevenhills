@@ -7060,28 +7060,28 @@ Site Footer
 .woocommerce-page ul.products {
   margin: 0 auto;
 }
-.woocommerce ul.products li.product,
-.woocommerce-page ul.products li.product {
+.woocommerce ul.products.columns-3 li.product,
+.woocommerce-page ul.products.columns-3 li.product {
   width: 26%;
   margin: 2.25% 2.25%;
 }
-.woocommerce ul.products li.product h2,
-.woocommerce-page ul.products li.product h2,
-.woocommerce ul.products li.product h3,
-.woocommerce-page ul.products li.product h3 {
+.woocommerce ul.products.columns-3 li.product h2,
+.woocommerce-page ul.products.columns-3 li.product h2,
+.woocommerce ul.products.columns-3 li.product h3,
+.woocommerce-page ul.products.columns-3 li.product h3 {
   text-align: center;
   min-height: 3.5em;
 }
-.woocommerce ul.products li.product span.price,
-.woocommerce-page ul.products li.product span.price {
+.woocommerce ul.products.columns-3 li.product span.price,
+.woocommerce-page ul.products.columns-3 li.product span.price {
   text-align: center;
 }
-.woocommerce ul.products li.product.first,
-.woocommerce-page ul.products li.product.first {
+.woocommerce ul.products.columns-3 li.product.first,
+.woocommerce-page ul.products.columns-3 li.product.first {
   margin-left: 6.5%;
 }
-.woocommerce ul.products li.product.last,
-.woocommerce-page ul.products li.product.last {
+.woocommerce ul.products.columns-3 li.product.last,
+.woocommerce-page ul.products.columns-3 li.product.last {
   margin-right: 6.5%;
 }
 .woocommerce .single_add_to_cart_button,

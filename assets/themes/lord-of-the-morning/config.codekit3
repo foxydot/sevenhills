@@ -7,21 +7,24 @@
 		"uuidString": "1A01970C-EACA-42D1-9331-99BC1236ECDB"
 		}
 	],
-"creatorBuild": "25813",
+"creatorBuild": "26330",
 "files": {
 	"\/front-page.php": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/front-page.php",
 		"oF": 0
 		},
 	"\/functions.php": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/functions.php",
 		"oF": 0
 		},
 	"\/image-widget\/widget.php": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/image-widget\/widget.php",
@@ -68,6 +71,7 @@
 		"oS": 0
 		},
 	"\/lib\/bootstrap\/fonts\/glyphicons-halflings-regular.eot": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/lib\/bootstrap\/fonts\/glyphicons-halflings-regular.eot",
@@ -84,12 +88,14 @@
 		"prP": 0
 		},
 	"\/lib\/bootstrap\/fonts\/glyphicons-halflings-regular.ttf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/lib\/bootstrap\/fonts\/glyphicons-halflings-regular.ttf",
 		"oF": 0
 		},
 	"\/lib\/bootstrap\/fonts\/glyphicons-halflings-regular.woff": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/lib\/bootstrap\/fonts\/glyphicons-halflings-regular.woff",
@@ -97,6 +103,7 @@
 		},
 	"\/lib\/bootstrap\/js\/bootstrap.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/bootstrap\/js\/min\/bootstrap-min.js",
@@ -106,6 +113,7 @@
 		},
 	"\/lib\/bootstrap\/js\/bootstrap.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/bootstrap\/js\/min\/bootstrap.min-min.js",
@@ -834,6 +842,7 @@
 		"oS": 0
 		},
 	"\/lib\/font-awesome\/fonts\/fontawesome-webfont.eot": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/lib\/font-awesome\/fonts\/fontawesome-webfont.eot",
@@ -850,18 +859,21 @@
 		"prP": 0
 		},
 	"\/lib\/font-awesome\/fonts\/fontawesome-webfont.ttf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/lib\/font-awesome\/fonts\/fontawesome-webfont.ttf",
 		"oF": 0
 		},
 	"\/lib\/font-awesome\/fonts\/fontawesome-webfont.woff": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/lib\/font-awesome\/fonts\/fontawesome-webfont.woff",
 		"oF": 0
 		},
 	"\/lib\/font-awesome\/fonts\/FontAwesome.otf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/lib\/font-awesome\/fonts\/FontAwesome.otf",
@@ -1258,6 +1270,7 @@
 		"uL": 1
 		},
 	"\/lib\/fonts\/Simple-Line-Icons.eot": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/lib\/fonts\/Simple-Line-Icons.eot",
@@ -1274,12 +1287,14 @@
 		"prP": 0
 		},
 	"\/lib\/fonts\/Simple-Line-Icons.ttf": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/lib\/fonts\/Simple-Line-Icons.ttf",
 		"oF": 0
 		},
 	"\/lib\/fonts\/Simple-Line-Icons.woff": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/lib\/fonts\/Simple-Line-Icons.woff",
@@ -1492,6 +1507,7 @@
 		"prP": 0
 		},
 	"\/lib\/img\/favicon.ico": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/lib\/img\/favicon.ico",
@@ -1723,96 +1739,112 @@
 		"q": 100
 		},
 	"\/lib\/inc\/devel.php": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/lib\/inc\/devel.php",
 		"oF": 0
 		},
 	"\/lib\/inc\/genesis_bootstrap_hooks.php": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/lib\/inc\/genesis_bootstrap_hooks.php",
 		"oF": 0
 		},
 	"\/lib\/inc\/genesis_tweak_functions.php": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/lib\/inc\/genesis_tweak_functions.php",
 		"oF": 0
 		},
 	"\/lib\/inc\/genesis_tweaks.php": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/lib\/inc\/genesis_tweaks.php",
 		"oF": 0
 		},
 	"\/lib\/inc\/homepage-layouts.php": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/lib\/inc\/homepage-layouts.php",
 		"oF": 0
 		},
 	"\/lib\/inc\/media.php": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/lib\/inc\/media.php",
 		"oF": 0
 		},
 	"\/lib\/inc\/mobile.php": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/lib\/inc\/mobile.php",
 		"oF": 0
 		},
 	"\/lib\/inc\/msd-functions.php": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/lib\/inc\/msd-functions.php",
 		"oF": 0
 		},
 	"\/lib\/inc\/msdlab-social-footer.php": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/lib\/inc\/msdlab-social-footer.php",
 		"oF": 0
 		},
 	"\/lib\/inc\/register-scripts.php": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/lib\/inc\/register-scripts.php",
 		"oF": 0
 		},
 	"\/lib\/inc\/sectioned.php": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/lib\/inc\/sectioned.php",
 		"oF": 0
 		},
 	"\/lib\/inc\/shortcodes.php": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/lib\/inc\/shortcodes.php",
 		"oF": 0
 		},
 	"\/lib\/inc\/subtitle-support.php": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/lib\/inc\/subtitle-support.php",
 		"oF": 0
 		},
 	"\/lib\/inc\/theme_options.php": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/lib\/inc\/theme_options.php",
 		"oF": 0
 		},
 	"\/lib\/inc\/widgets.php": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/lib\/inc\/widgets.php",
 		"oF": 0
 		},
 	"\/lib\/inc\/woocommerce.php": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/lib\/inc\/woocommerce.php",
@@ -1820,6 +1852,7 @@
 		},
 	"\/lib\/js\/blur.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/js\/min\/blur-min.js",
@@ -1829,6 +1862,7 @@
 		},
 	"\/lib\/js\/greensock\/easing\/EasePack.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/js\/greensock\/easing\/min\/EasePack.min-min.js",
@@ -1838,6 +1872,7 @@
 		},
 	"\/lib\/js\/greensock\/jquery.gsap.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/js\/greensock\/min\/jquery.gsap.min-min.js",
@@ -1847,6 +1882,7 @@
 		},
 	"\/lib\/js\/greensock\/plugins\/AttrPlugin.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/js\/greensock\/plugins\/min\/AttrPlugin.min-min.js",
@@ -1856,6 +1892,7 @@
 		},
 	"\/lib\/js\/greensock\/plugins\/BezierPlugin.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/js\/greensock\/plugins\/min\/BezierPlugin.min-min.js",
@@ -1865,6 +1902,7 @@
 		},
 	"\/lib\/js\/greensock\/plugins\/ColorPropsPlugin.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/js\/greensock\/plugins\/min\/ColorPropsPlugin.min-min.js",
@@ -1874,6 +1912,7 @@
 		},
 	"\/lib\/js\/greensock\/plugins\/CSSPlugin.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/js\/greensock\/plugins\/min\/CSSPlugin.min-min.js",
@@ -1883,6 +1922,7 @@
 		},
 	"\/lib\/js\/greensock\/plugins\/CSSRulePlugin.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/js\/greensock\/plugins\/min\/CSSRulePlugin.min-min.js",
@@ -1892,6 +1932,7 @@
 		},
 	"\/lib\/js\/greensock\/plugins\/DirectionalRotationPlugin.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/js\/greensock\/plugins\/min\/DirectionalRotationPlugin.min-min.js",
@@ -1901,6 +1942,7 @@
 		},
 	"\/lib\/js\/greensock\/plugins\/EaselPlugin.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/js\/greensock\/plugins\/min\/EaselPlugin.min-min.js",
@@ -1910,6 +1952,7 @@
 		},
 	"\/lib\/js\/greensock\/plugins\/EndArrayPlugin.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/js\/greensock\/plugins\/min\/EndArrayPlugin.min-min.js",
@@ -1919,6 +1962,7 @@
 		},
 	"\/lib\/js\/greensock\/plugins\/KineticPlugin.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/js\/greensock\/plugins\/min\/KineticPlugin.min-min.js",
@@ -1928,6 +1972,7 @@
 		},
 	"\/lib\/js\/greensock\/plugins\/RaphaelPlugin.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/js\/greensock\/plugins\/min\/RaphaelPlugin.min-min.js",
@@ -1937,6 +1982,7 @@
 		},
 	"\/lib\/js\/greensock\/plugins\/RoundPropsPlugin.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/js\/greensock\/plugins\/min\/RoundPropsPlugin.min-min.js",
@@ -1946,6 +1992,7 @@
 		},
 	"\/lib\/js\/greensock\/plugins\/ScrollToPlugin.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/js\/greensock\/plugins\/min\/ScrollToPlugin.min-min.js",
@@ -1955,6 +2002,7 @@
 		},
 	"\/lib\/js\/greensock\/plugins\/TextPlugin.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/js\/greensock\/plugins\/min\/TextPlugin.min-min.js",
@@ -1964,6 +2012,7 @@
 		},
 	"\/lib\/js\/greensock\/TimelineLite.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/js\/greensock\/min\/TimelineLite.min-min.js",
@@ -1973,6 +2022,7 @@
 		},
 	"\/lib\/js\/greensock\/TimelineMax.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/js\/greensock\/min\/TimelineMax.min-min.js",
@@ -1982,6 +2032,7 @@
 		},
 	"\/lib\/js\/greensock\/TweenLite.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/js\/greensock\/min\/TweenLite.min-min.js",
@@ -1991,6 +2042,7 @@
 		},
 	"\/lib\/js\/greensock\/TweenMax.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/js\/greensock\/min\/TweenMax.min-min.js",
@@ -2000,6 +2052,7 @@
 		},
 	"\/lib\/js\/greensock\/utils\/Draggable.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/js\/greensock\/utils\/min\/Draggable.min-min.js",
@@ -2009,6 +2062,7 @@
 		},
 	"\/lib\/js\/homepage-jquery-ck.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/js\/min\/homepage-jquery-ck-min.js",
@@ -2018,6 +2072,7 @@
 		},
 	"\/lib\/js\/homepage-jquery.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/js\/min\/homepage-jquery-min.js",
@@ -2027,6 +2082,7 @@
 		},
 	"\/lib\/js\/ie-jquery-ck.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/js\/min\/ie-jquery-ck-min.js",
@@ -2036,6 +2092,7 @@
 		},
 	"\/lib\/js\/ie-jquery.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/js\/min\/ie-jquery-min.js",
@@ -2045,6 +2102,7 @@
 		},
 	"\/lib\/js\/imagesloaded.pkgd.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/js\/min\/imagesloaded.pkgd.min-min.js",
@@ -2054,6 +2112,7 @@
 		},
 	"\/lib\/js\/isotope.pkgd.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/js\/min\/isotope.pkgd-min.js",
@@ -2063,6 +2122,7 @@
 		},
 	"\/lib\/js\/jquery.backgroundSize.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/js\/min\/jquery.backgroundSize-min.js",
@@ -2072,6 +2132,7 @@
 		},
 	"\/lib\/js\/jquery.columnizer.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/js\/min\/jquery.columnizer-min.js",
@@ -2081,6 +2142,7 @@
 		},
 	"\/lib\/js\/jquery.equal-height-columns.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/js\/min\/jquery.equal-height-columns-min.js",
@@ -2090,6 +2152,7 @@
 		},
 	"\/lib\/js\/jquery.lettering.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/js\/min\/jquery.lettering-min.js",
@@ -2099,6 +2162,7 @@
 		},
 	"\/lib\/js\/jquery.path.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/js\/min\/jquery.path-min.js",
@@ -2108,6 +2172,7 @@
 		},
 	"\/lib\/js\/jquery.scrollmagic.debug.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/js\/min\/jquery.scrollmagic.debug-min.js",
@@ -2117,6 +2182,7 @@
 		},
 	"\/lib\/js\/jquery.scrollmagic.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/js\/min\/jquery.scrollmagic-min.js",
@@ -2126,6 +2192,7 @@
 		},
 	"\/lib\/js\/jquery.scrollmagic.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/js\/min\/jquery.scrollmagic.min-min.js",
@@ -2135,6 +2202,7 @@
 		},
 	"\/lib\/js\/min\/blur-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 1,
 		"oAP": "\/lib\/js\/min\/min\/blur-min-min.js",
@@ -2144,6 +2212,7 @@
 		},
 	"\/lib\/js\/min\/homepage-jquery-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 1,
 		"oAP": "\/lib\/js\/min\/min\/homepage-jquery-min-min.js",
@@ -2153,6 +2222,7 @@
 		},
 	"\/lib\/js\/min\/page-jquery-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 1,
 		"oAP": "\/lib\/js\/min\/min\/page-jquery-min-min.js",
@@ -2162,6 +2232,7 @@
 		},
 	"\/lib\/js\/min\/theme-jquery-ck.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/js\/min\/min\/theme-jquery-ck-min.js",
@@ -2171,6 +2242,7 @@
 		},
 	"\/lib\/js\/min\/theme-jquery-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 1,
 		"oAP": "\/lib\/js\/min\/min\/theme-jquery-min-min.js",
@@ -2180,6 +2252,7 @@
 		},
 	"\/lib\/js\/modernizr-custom.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/js\/min\/modernizr-custom-min.js",
@@ -2189,6 +2262,7 @@
 		},
 	"\/lib\/js\/nav-scripts.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/js\/min\/nav-scripts-min.js",
@@ -2198,6 +2272,7 @@
 		},
 	"\/lib\/js\/page-jquery.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/js\/min\/page-jquery-min.js",
@@ -2207,6 +2282,7 @@
 		},
 	"\/lib\/js\/respond.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/js\/min\/respond.min-min.js",
@@ -2216,6 +2292,7 @@
 		},
 	"\/lib\/js\/theme-jquery-ck.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/js\/min\/theme-jquery-ck-min.js",
@@ -2225,6 +2302,7 @@
 		},
 	"\/lib\/js\/theme-jquery.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/lib\/js\/min\/theme-jquery-min.js",
@@ -2709,6 +2787,7 @@
 		"sU": 0
 		},
 	"\/lib\/template\/footer-meta.php": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/lib\/template\/footer-meta.php",
@@ -2725,12 +2804,14 @@
 		"oS": 0
 		},
 	"\/lib\/template\/metabox-homepage.php": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/lib\/template\/metabox-homepage.php",
 		"oF": 0
 		},
 	"\/lib\/template\/subtitle-meta.php": {
+		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/lib\/template\/subtitle-meta.php",
@@ -2774,6 +2855,7 @@
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
+	"autoprefixerEnableIEGrid": 0,
 	"babelAuxiliaryCommentAfter": "",
 	"babelAuxiliaryCommentBefore": "",
 	"babelConfigFileHandlingType": 0,
@@ -3170,6 +3252,10 @@
 			"active": 0,
 			"optionString": "{'setWithoutGet': true, 'getWithoutSet': false}"
 			},
+		"array-bracket-newline": {
+			"active": 0,
+			"optionString": "{'multiline': true, 'minItems': null}"
+			},
 		"array-bracket-spacing": {
 			"active": 0,
 			"optionString": "'never', {'singleValue': false, 'objectsInArrays': false, 'arraysInArrays': false}"
@@ -3177,6 +3263,10 @@
 		"array-callback-return": {
 			"active": 0,
 			"optionString": ""
+			},
+		"array-element-newline": {
+			"active": 0,
+			"optionString": "'always'"
 			},
 		"arrow-body-style": {
 			"active": 0,
@@ -3274,6 +3364,10 @@
 			"active": 0,
 			"optionString": "'always', {'null': 'always'}"
 			},
+		"for-direction": {
+			"active": 0,
+			"optionString": ""
+			},
 		"func-call-spacing": {
 			"active": 0,
 			"optionString": "'never'"
@@ -3290,9 +3384,17 @@
 			"active": 0,
 			"optionString": "'expression'"
 			},
+		"function-paren-newline": {
+			"active": 0,
+			"optionString": "'multiline'"
+			},
 		"generator-star-spacing": {
 			"active": 0,
 			"optionString": "{'before': true, 'after': false}"
+			},
+		"getter-return": {
+			"active": 0,
+			"optionString": "{'allowImplicit': false}"
 			},
 		"global-require": {
 			"active": 0,
@@ -3317,6 +3419,10 @@
 		"id-match": {
 			"active": 0,
 			"optionString": "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true}"
+			},
+		"implicit-arrow-linebreak": {
+			"active": 0,
+			"optionString": "'beside'"
 			},
 		"indent": {
 			"active": 0,
@@ -3350,9 +3456,9 @@
 			"active": 0,
 			"optionString": "{'beforeBlockComment': true}"
 			},
-		"lines-around-directive": {
+		"lines-between-class-members": {
 			"active": 0,
-			"optionString": "{'before': 'always', 'after': 'always'}"
+			"optionString": "'always', {exceptAfterSingleLine: false}"
 			},
 		"max-depth": {
 			"active": 0,
@@ -3382,6 +3488,10 @@
 			"active": 0,
 			"optionString": "{'max': 1}"
 			},
+		"multiline-comment-style": {
+			"active": 0,
+			"optionString": "'starred-block'"
+			},
 		"multiline-ternary": {
 			"active": 0,
 			"optionString": "'always'"
@@ -3391,14 +3501,6 @@
 			"optionString": "{'newIsCap': true, 'capIsNew': true, 'newIsCapExceptions': [], 'capIsNewExceptions': ['Array', 'Boolean', 'Date', 'Error', 'Function', 'Number', 'Object', 'RegExp', 'String', 'Symbol'], 'properties': true}"
 			},
 		"new-parens": {
-			"active": 0,
-			"optionString": ""
-			},
-		"newline-after-var": {
-			"active": 0,
-			"optionString": "'always'"
-			},
-		"newline-before-return": {
 			"active": 0,
 			"optionString": ""
 			},
@@ -3421,6 +3523,10 @@
 		"no-bitwise": {
 			"active": 0,
 			"optionString": "{'allow': ['~'], 'int32Hint': true}"
+			},
+		"no-buffer-constructor": {
+			"active": 0,
+			"optionString": ""
 			},
 		"no-caller": {
 			"active": 0,
@@ -3966,6 +4072,10 @@
 			"active": 0,
 			"optionString": "{'blocks': 'always', 'switches': 'always', 'classes': 'always'}"
 			},
+		"padding-line-between-statements": {
+			"active": 0,
+			"optionString": "{blankLine: 'always', prev:'*', next:'return'}"
+			},
 		"prefer-arrow-callback": {
 			"active": 0,
 			"optionString": ""
@@ -4034,6 +4144,10 @@
 			"active": 0,
 			"optionString": "{'before': false, 'after': true}"
 			},
+		"semi-style": {
+			"active": 0,
+			"optionString": "'last'"
+			},
 		"sort-imports": {
 			"active": 0,
 			"optionString": "{'ignoreCase': false, 'ignoreMemberSort': true, 'memberSyntaxSortOrder': ['none', 'all', 'multiple', 'single']}"
@@ -4073,6 +4187,10 @@
 		"strict": {
 			"active": 0,
 			"optionString": "'safe'"
+			},
+		"switch-colon-spacing": {
+			"active": 0,
+			"optionString": "{'after': true, 'before': false}"
 			},
 		"symbol-description": {
 			"active": 0,
@@ -4486,7 +4604,8 @@
 		"createSourceMap": 0,
 		"minifyOutput": 1,
 		"outputStyle": 0,
-		"syntaxCheckerStyle": 1
+		"syntaxCheckerStyle": 1,
+		"transpilerStyle": 1
 		},
 	"languageDefaultsCSS": {
 		"autoOutputAction": 0,
@@ -4519,6 +4638,7 @@
 		"noEscapeInAttributes": 0,
 		"outputFormat": 2,
 		"outputStyle": 0,
+		"shouldRunCacheBuster": 0,
 		"useCDATA": 0,
 		"useDoubleQuotes": 0,
 		"useUnixNewlines": 0
@@ -4560,7 +4680,8 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"shouldRunCacheBuster": 0
 		},
 	"languageDefaultsLESS": {
 		"allowInsecureImports": 0,
@@ -4592,13 +4713,13 @@
 		"enableFootnotes": 1,
 		"enableLabels": 1,
 		"enableSmartQuotes": 1,
-		"escapeLineBreaks": 0,
 		"maskEmailAddresses": 1,
 		"outputFormat": 0,
 		"outputStyle": 0,
 		"parseMetadata": 1,
 		"processHTML": 0,
 		"randomFootnoteNumbers": 0,
+		"shouldRunCacheBuster": 0,
 		"useCompatibilityMode": 0
 		},
 	"languageDefaultsOTHER": {
@@ -4607,7 +4728,8 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"shouldRunCacheBuster": 0
 		},
 	"languageDefaultsPNG": {
 		"autoOutputAction": 0,
@@ -4627,7 +4749,8 @@
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
 		"compileDebug": 1,
-		"outputStyle": 0
+		"outputStyle": 0,
+		"shouldRunCacheBuster": 0
 		},
 	"languageDefaultsSASS": {
 		"autoOutputAction": 0,
@@ -4655,7 +4778,8 @@
 		"logicless": 0,
 		"outputFormat": 0,
 		"outputStyle": 1,
-		"railsCompatible": 0
+		"railsCompatible": 0,
+		"shouldRunCacheBuster": 0
 		},
 	"languageDefaultsSTYLUS": {
 		"autoOutputAction": 0,
@@ -4702,9 +4826,11 @@
 		},
 	"languageDefaultsUserDefined": [
 		],
+	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules",
 	"sourceFolderName": "source",
+	"susyVersion": 3,
 	"uglifyDefinesString": "",
 	"uglifyFlags2": {
 		"ascii-only": {

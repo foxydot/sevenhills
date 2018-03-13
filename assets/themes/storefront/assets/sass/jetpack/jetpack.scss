@@ -8,6 +8,10 @@
 @import '../../sass/utils/mixins';
 @import '../../../assets/sass/vendors/modular-scale';
 
+/**
+ * Widgets
+ */
+
 // Subscription widget
 .jetpack_subscription_widget {
 	#subscribe-email {
@@ -15,6 +19,17 @@
 			padding: ms(-2) !important;
 			width: 100% !important;
 		}
+	}
+}
+
+// Google Translate widget
+.widget_google_translate_widget {
+	img {
+		display: inline;
+	}
+
+	a {
+		text-decoration: none !important;
 	}
 }
 
@@ -28,7 +43,8 @@
 .infinite-scroll .woocommerce-pagination,
 .infinite-scroll ul.products + .storefront-sorting,
 .infinite-scroll .woocommerce-result-count,
-.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
+.infinite-scroll.neverending .site-footer,
+.infinite-scroll .storefront-sorting { /* Theme Footer (when set to scrolling) */
 	display: none;
 }
 
