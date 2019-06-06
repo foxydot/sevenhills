@@ -179,3 +179,10 @@ function wf_hide_shipping_method_based_on_shipping_class($available_shipping_met
     }
     return $available_shipping_methods;
 }
+
+//add_filter('woocommerce_shortcode_products_query','msdlab_woocommerce_shortcode_products_query',10,3);
+
+function msdlab_woocommerce_shortcode_products_query($query,$attributes,$type){
+    ts_data($attributes);
+    ts_data($type);
+}
